@@ -1,5 +1,5 @@
 This work is licensed under the [Creative Commons Attribution-NonCommercial-NoDerivs 3.0 United States (CC BY-NC-ND 3.0 US)](http://creativecommons.org/licenses/by-nc-nd/3.0/us/).
-You can read the full license below.
+You can read the full license below.  
 License
 
 THE WORK (AS DEFINED BELOW) IS PROVIDED UNDER THE TERMS OF THIS CREATIVE COMMONS PUBLIC LICENSE ("CCPL" OR "LICENSE"). THE WORK IS PROTECTED BY COPYRIGHT AND/OR OTHER APPLICABLE LAW. ANY USE OF THE WORK OTHER THAN AS AUTHORIZED UNDER THIS LICENSE OR COPYRIGHT LAW IS PROHIBITED.
