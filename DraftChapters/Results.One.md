@@ -126,7 +126,7 @@ ggplot(Daily.Activity.Final, aes(x=Date, y=Valid.Final)) +
   facet_grid(id ~.)
 ```
 
-<img src="/Users/ernestoramirez/ER_Github/LivingWithData/DraftChapters/Results.One_files/figure-markdown_github/unnamed-chunk-3-1.png" alt="Valid Days per Participant"  />
+<img src="Results.One_files/figure-markdown_github/unnamed-chunk-3-1.png" alt="Valid Days per Participant"  />
 <p class="caption">
 Valid Days per Participant
 </p>
@@ -253,7 +253,7 @@ library(ggplot2)
 ggplot(StepDescriptives.Valid.Table, aes(x=id, y=mean)) + geom_bar(stat="identity")
 ```
 
-![](/Users/ernestoramirez/ER_Github/LivingWithData/DraftChapters/Results.One_files/figure-markdown_github/unnamed-chunk-5-1.png)<!-- -->
+![](Results.One_files/figure-markdown_github/unnamed-chunk-5-1.png)<!-- -->
 
 *Distance*. For all valid days, participants in the currenty study totaled 111,676.76 km traveled. The mean across all participants was 7.01 km per day (SD = 3.91 km per day). Per participant kilometers traveled per day ranged from 0.07 to 56.30 km per day. Descriptive data for distance traveled per valid day per participant is shown in Table \[TK\].
 
@@ -486,7 +486,7 @@ StepCategories.Percent <- as.data.frame(prop.table(StepCategories, 1))
 ggplot(StepCategories.Percent, aes(id, Freq, fill=StepCategory)) + geom_bar(stat="identity")
 ```
 
-<img src="/Users/ernestoramirez/ER_Github/LivingWithData/DraftChapters/Results.One_files/figure-markdown_github/unnamed-chunk-11-1.png" alt="Classification of Valid Days by Step Total per Participant"  />
+<img src="Results.One_files/figure-markdown_github/unnamed-chunk-11-1.png" alt="Classification of Valid Days by Step Total per Participant"  />
 <p class="caption">
 Classification of Valid Days by Step Total per Participant
 </p>
