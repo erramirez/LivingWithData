@@ -16,7 +16,7 @@ output:
 csl: apa-no-ampersand.csl
 bibliography: library.bib
 ---
-#Introduction
+# Introduction
 
 Any casual observer of technological trends has seen the rise of personal physical activity monitors. Since Fitbit introduced the first advanced wearable activity tracker in 2009, Fitbit has inspired a range of activity tracking devices and applications such as the Jawbone UP, Nike Fuelband, and Garmin Vivofit , and over 60 additional devices, with annual sales of  over $350 million [@Ramirez2014; @BrianDolan]. Smartphone manufactures have also taken notice and have built dedicated measurement and processing systems into their devices. Public health and research institutions as well as funding agencies have begun to see the value in the vast amounts of data that is being collected by individuals tracking their own physical activity. However, there is a lack of understanding of how individuals use these devices during the normal course of their lives, how they understand and develop relationships with the device’s explicit behavioral design characteristics, and the relationship between device use and behavior change.
 
