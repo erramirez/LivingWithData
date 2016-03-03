@@ -1,0 +1,26 @@
+---
+title: "Behavior Change Techniques - Background"
+author: "Ernesto Ramirez"
+date: "March 2, 2016"
+output:
+  github_document:
+    toc: true
+    toc_depth: 3
+    html_preview: false
+  pdf_document:
+    toc: yes
+  html_document:
+    toc: true
+    toc_float: true
+  word_document:
+csl: apa-no-ampersand.csl
+bibliography: library.bib
+---
+
+# Behavior Change Techniques
+
+Interventions that positively impact health behaviors, especially physical activity and weight loss associated behaviors, are more efficacious when they employ theoretically driven approaches. Recently, there has been a shift toward more specifically identifying the individual components in interventions in a trans-theoretical approach [@Abraham2008; @Michie2011a]. These behavior change techniques (BCTs) can be also for intervention planning and system or program assessment. For instance, a refined BCT taxonomy has been used to assess mobile health applications, wearable physical activity trackers, and internet-based program for physical activity and weight loss [@Chen2015; @Conroy2014; @Cowan2013; @Dennison2013a; @Pagoto2013a; @Yang2015a]. This assessment work is vital as the use of BCTs has been directly associated with behavioral improvement, and this association follows a dose-response relationship. A review and meta-analysis on internet-based health has indicated that interventions that use more BCTs have larger effects on behavior than interventions that used fewer techniques [@Yang2015a].
+
+Our current understanding of the impact of BCTs on health behavior is guided by rigorous reviews and post-hoc evaluations of reported intervention components. For instance, Michie and colleagues found that physical activity and diet interventions that include self-monitoring (an identified BCT) and at least one other BCT were more effective than interventions that did not include self-monitoring[@Michie2009]. As the lay population have rapidly adopted commercial health behavior tracking and behavior change tools, researchers have begun to evaluate these tools through the lens of the BCT taxonomy. These reviews typically explore the design of commercial tools/apps  in order to determine if “what works” (BCTs) is included in the design of their tools. However these reviews are based on researcher’s brief experience with the app/tool, sometimes lasting as little as a few days [@Chen2015; @Conroy2014; @Cowan2013; @Dennison2013a; @Pagoto2013a; @Yang2015a]. Additionally, there appears to be an underlying belief being that BCT inclusion, and the volume of the inclusion, will have a direct positive impact on individuals who use those tools/apps.
+
+To date, there have been few studies that have sought to examine the use of BCTs by users of self-tracking devices. The majority of  studies have typically focused on usability testing (testing design characteristics), or recruit individuals to use a device for only a  short period of time [@Mercer2016; @Rabin2011a; @Shih2015]. The few studies that have recruited a sample of individuals who have freely chosen to engage with self-tracking devices and/or apps have focused on a broad range of technology oriented health behavior change systems [@Belmon2015; @Gowin2015].

@@ -1,0 +1,26 @@
+---
+title: "Fitbit Research"
+author: "Ernesto Ramirez"
+date: "March 2, 2016"
+output:
+  github_document:
+    toc: true
+    toc_depth: 3
+    html_preview: false
+  pdf_document:
+    toc: yes
+  html_document:
+    toc: true
+    toc_float: true
+  word_document:
+csl: apa-no-ampersand.csl
+bibliography: library.bib
+---
+
+# Fitbit Physical Activity Trackers
+
+In September 2008, the first verstion of the Fitbit activity tracker was unveiled at the TechCrunch50 Conference. At the time, it was described as "a small, wireless device, the size of a thumb" that used a tri-axial accelerometer to measure and track steps, distance, energy expenditure, and sleep [@Miller2008]. The first Fitbit devices were distributed on year later in the fall of 2009 to its first customers, and cost $99. The initial device included a "base station" that combined wireless data transfer and battery charging (when the device was connected to the base station). The battery lasted for approximately seven days, and the device would sync with the user's online account whenever it was in range of a base station connected to a internet-conected computer. The device itself included a LED screen and a physical button. By pushing the button a user was able to cycle through the data the device had captured for the current day including: steps, distance traveled, energy expenditure (calories burned), and a flower icon that grows (or shrinks) according to activity levels over the last three hours [@FitbitManual].
+
+[FIGURE TK. FITBIT & BASE STATION]
+
+Since 2009 Fitbit, Inc. has released an additional ten tracking devices of which 8 are currently available for purchase (see Table TK for a description of all devices - TABLE FITBITDEVICES)
