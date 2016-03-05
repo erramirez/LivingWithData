@@ -23,4 +23,15 @@ In September 2008, the first verstion of the Fitbit activity tracker was unveile
 
 [FIGURE TK. FITBIT & BASE STATION]
 
-Since 2009 Fitbit, Inc. has released an additional ten tracking devices of which 8 are currently available for purchase (see Table TK for a description of all devices - TABLE FITBITDEVICES)
+Since 2009 Fitbit, Inc. has released an additional ten tracking devices of which 8 are currently available for purchase (see Table TK for a description of all devices - TABLE FITBITDEVICES). Each of these devices, whether worn as a clip or on the wrist, are based on a tri-axial accelerometer and proprietary data processing algorithms. As Fitbit has been widely adopted as a method for personal physical activity measurement, their has been considerable interest from the research community for understanding it's utility as both a measurement tool and intervention component.
+
+## Accuracy
+To date, Fitbit has not publically released any information related to the accuracy of their different devices. They indicate, on a webpage addressing accuracy concerns, that they have "performed multiple internal studies to rigorously test the accuracy of Fitbit trackers." and that their testing has "confirmed that our trackers are some of the most accurate wireless tracking devices.", however none of these studies are available to the general public or research community [@FitbitAccuracy]. Everson, Goto, and Furberg recently published a systematic review of the validity and reliability of activity trackers, including Fitbit. Overall they 
+
+
+
+
+## Reliability
+
+
+## Interventions
