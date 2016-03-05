@@ -5,9 +5,11 @@ Table of Contents:
             Physical Activity Guidelines
             Physical Activity Behavior / Prevalence
             Physical Activity Measurement
-            
+
         Behavior Change Techniques
-        Commercial Self-Tracking
+        New Self-Monitoring:
+            Wearables (how many?)
+            Fitbit (how many?)
         Summary:
 
     Methods:
