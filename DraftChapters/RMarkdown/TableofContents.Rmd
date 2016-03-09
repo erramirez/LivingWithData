@@ -1,17 +1,30 @@
 Table of Contents:
     Introduction:
     Background:
-        Physical Activity & Health:
+        Physical Activity & Health
             Physical Activity Guidelines
             Physical Activity Behavior / Prevalence
-            Physical Activity Measurement
-
+            Pedometers
+        Self-Monitoring
         Behavior Change Techniques
-        New Self-Monitoring:
+        Self-Tracking (new field):
             Wearables (how many?)
             Fitbit (how many?)
-        Summary:
-
+        Current Research
+        Summary
     Methods:
+        Research Desing
+            Setting
+            Recruitment
+            Inclusion/Exclusion Criteria
+        Primary & Secondary Outcomes
+            Fitbit
+                Fitbit in Research
+                Fitbit Data Collection
+            Interview
+            Demographic information
+            7-Day PAR
+            Psychosocial Survey
+        Data Analysis
     Results:
     Discussion:
