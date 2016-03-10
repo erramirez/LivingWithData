@@ -17,9 +17,7 @@ csl: apa-no-ampersand.csl
 bibliography: library.bib
 ---
 # Methods
-
-
-### Research Design.
+## Research Design.
 This study was designed to elicit both qualitative and quantitative information from individuals who had been using a physical activity tracking device (Fitbit) for long period of time (>= 90 days). Participants recruited to participate in this research study will be asked to complete two phases in order to participate in the study. In the initial phase participants who met the inclusion criteria and consented to be included in the study were asked to connect their Fitbit accounts to the Fitabase analytics system (Small Steps Labs, San Diego, CA, USA). This allowed participants to grant access to their historical data, collected through their Fitbit device, to the investigator. Once participants completed phase one they were asked to take part in a two-stage interview in-person, via phone, or via a web-video conference. Each interview was designed to last between 1.5 and 2 hours. The first stage of the interview consisted of gathering demographic data and completing various psychosocial measures. This lasted approximately 30 minutes. The second stage of the interview was a semi-structured interview and conversation with the pariticpant that covered a variety of topics related to the participants’ use of the Fitbit, the participants’ relationship with the data it collects, and the use of behavior change techniques. The institutional review board from the Univeristy of California, San Diego approved this study.
 
 ### Setting
@@ -40,34 +38,33 @@ Inclusion and exclusion criteria consisted of: 1) men and women between 18 and 6
 
 ## Primary and Secondary Outcome Measures
 
-### Interview
-A short set of interview questions was be prepared prior to recruitment and was refined to reflect emerging knowledge as the research process progressed. The interviews were conducted in order to uncover the narratives and processes that reflect the realty of using a physical activity tracker. An Informed Grounded Theory approach was used to transcribe, code, and identify themes from the interviews. This approach is based on the use of prior research and literature to inform and focus attention on specific ideas or concepts during the qualitative research process (Thornberg, 2012). By using prior research, specifically the 93 BCTs in the BCTTv1, as well as findings from similarly designed studies, this process built on existing knowledge while simultaneously being open to the identification of new and unique themes and phenomena related to physical activity tracker use.
+[INCLUDE FitbitResearch.Rmd HERE]
 
-
-### Fitbit Data
-In this second phase, Fitbit data, collected by the recruited participants, will be accessed and downloaded in order to complete a quantitative analysis to compliment the research conducted in phase one. Fitbit data (daily aggregate and 1-minute intraday data) from each participant will be gathered and stored for the duration of the study. In order to understand the behavioral characteristics of the participants, all historical activity tracker data will also be made available for analysis. That is to say, once the participants consent to participate in this research project and authorize their Fitbit data to be read, their complete Fitbit data history will be collected. Data analysis will include comparisons to participants’ answers as well as comparisons to national guidelines, exploration of behavioral patterns, and classifications based on the full dataset provided by all participants.
-
-### Demographic Information.
-Participants completed a demographic questionnaire that includes birth year, gender, race/ethnicity, education, height, weight, marital status, and household income.
-
-### 7-Day Physical Activity Recall (PAR)
-The 7-DAY PAR is a validated, interview-administered, semi-structured physical activity recall survey [@Sallis1985a]. Participants will be asked to recall their physical activity behaviors and intensities for the previous seven days.
-
-### Psychosocial Survey
-The participant were asked to complete a psychosocial survey designed to identify various aspects of physical activity behavior and thought processes. These measures, designed and validated for use with adult men and women include short surveys to determine decisional balance, self-efficacy, behavior change strategies, and social support related to physical activity behavior [@Carlson2012].
-
-
-### Coding Interviews
 
 ### Fitbit Data Collection
-In addition to the user-centered components of the Fitbit system (device, application, and dashboard), Fitbit has developed and provided access to an application programming interface (API) so that outside entities can build tools and services to enhance the user experience. The API allows a third party to access and add to the data currently gathered and stored in the Fitbit database. These read/write privileges allow an application developer to build visualizations, reminder tools, and add additional services to existing behavioral or data storage platforms. It is important to note that access to a user’s data is only performed after an authorization by the user has taken place.
+In addition to the user-centered components of the Fitbit system (device, application, and dashboard), Fitbit has developed and provides access to an application programming interface (API) so that outside entities can build tools and services to enhance the user experience. The API allows a third party to access and add to the data currently gathered and stored in the Fitbit database. These read/write privileges allow an application developer to build visualizations, reminder tools, and add additional services to existing behavioral or data storage platforms.
 
 In order to access Fitbit data from research participants, the Fitabase service was used. Fitabase provides a simple platform for authenticating participants and accessing the data gathered while using a Fitbit device. Fitabase has been chosen because all data is stored in a secure server, and its history of collaboration with research institutions [@Cadmus-Bertram2015; Choi2015; @Diaz2015a; @Hartman2015; @Schaefer2016]. Participants were be asked to authorize the Fitabase system to access their Fitbit data and make it available for download for analysis. All participants authorized the Fitabase system via an online portal.
 
 Online Authorization. The participant was asked for a valid email address to send the authorization link. The author then created a profile for the participant that included their assigned unique study identifier. A link to Fitabase Authorization Page was then emailed to the participant. The online Fitabase Authorization Page contains the same text as the Fitabase Authorization page (Appendix TK). At the bottom of the online Fitabase Authorization page a “connect your device” button was present. The participant was asked to read the authorization page and if they agreed, to connect their Fitbit and authorize Fitabase to read and access their Fitbti data. It important to note that the personal login information for each particiapnt was be entered outside of the view of the author and is not passed to the Fitabase system (it uses the OAuth protocol established for API authentication). When the participant entered their information and connected their Fitbit account to Fitabase the online authorization was completed. This completion also signaled an acceptance of the Fitabase Terms of Use and Privacy Policy [@Fitabase2016].
 
-Fitbit Data.
-For each participant, the data at the interday (daily aggregate values) level, and at the intraday (minute-by-minute values) was available for downloading and analysis. At the interday level the following data was downloaed: Steps, Distance Traveled, Very Active Minutes, Fairly Active Minutes, Lightly Active Minutes, Sedendaty Minuutes, and Estimated Energy Expenditure. At the intraday level, the following data is avaialble and was downloaded: Steps, Intensity Classifcation, MET Values, and Estimated Energy Expenditure. 
+### Fitbit Data
+For each participant, the data at the interday (daily aggregate values) level, and at the intraday (minute-by-minute values) level was available for downloading and analysis. At the interday level the following data was downloaed: Steps, Distance Traveled, Very Active Minutes, Fairly Active Minutes, Lightly Active Minutes, Sedendaty Minutes, and Estimated Energy Expenditure. At the intraday level, the following data is avaialble and was downloaded: Steps, Intensity Classifcation, MET Values, and Estimated Energy Expenditure. All Fitabase data files were downloaded in CSV format.
+
+### Interview
+A short set of interview questions was be prepared prior to recruitment and was refined to reflect emerging knowledge as the research process progressed. The interviews were conducted in order to uncover the narratives and processes that reflect the realty of using a physical activity tracker. An Informed Grounded Theory approach was used to transcribe, code, and identify themes from the interviews. This approach is based on the use of prior research and literature to inform and focus attention on specific ideas or concepts during the qualitative research process (Thornberg, 2012). By using prior research, specifically the 93 BCTs in the BCTTv1, as well as findings from similarly designed studies, this process built on existing knowledge while simultaneously being open to the identification of new and unique themes and phenomena related to physical activity tracker use.
+### Demographic Information.
+Participants completed a demographic questionnaire that included birth year, gender, race/ethnicity, education, height, weight, marital status, and household income.
+
+### 7-Day Physical Activity Recall (PAR)
+The 7-Day PAR is a validated, interview-administered, semi-structured physical activity recall survey [@Sallis1985a]. Participants were asked to recall their sleep and physical activity behaviors (and corresponding intensities) for the previous seven days.
+
+### Psychosocial Survey
+All participants were asked to complete a psychosocial survey designed to identify various aspects of physical activity behavior and thought processes. These measures, designed and validated for use with adult men and women include short surveys to determine decisional balance, self-efficacy, behavior change strategies, and social support related to physical activity behavior [@Carlson2012].
+
+
+### Coding Interviews
+
 
 
 
