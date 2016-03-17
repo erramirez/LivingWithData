@@ -4,22 +4,34 @@ Table of Contents:
         Physical Activity & Health
             Physical Activity Guidelines
             Physical Activity Behavior / Prevalence
-            Pedometers
+            Measurement of Physcical Activity
+                Self-Report
+                Observation
+                Pedometers
+                Accelerometers              
         Self-Monitoring
+            Pedometers
         Behavior Change Techniques
+        Discretionary Use (HCI)
         Self-Tracking (new field):
             Wearables (how many?)
             Fitbit (how many?)
         Current Research
+            Fitbit in Research
+                Validity
+                Reliability
+                Accessibility
+                Fitbit Interventions
+                New Directions
+            Fitbit / Wearables in HCI
         Summary
     Methods:
-        Research Desing
+        Research Design
             Setting
             Recruitment
             Inclusion/Exclusion Criteria
         Primary & Secondary Outcomes
             Fitbit
-                Fitbit in Research
                 Fitbit Data Collection
             Interview
             Demographic information
@@ -31,4 +43,3 @@ Table of Contents:
 
     Appendices:
         Recruitment Materials
-        
