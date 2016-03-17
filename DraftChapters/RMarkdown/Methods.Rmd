@@ -53,6 +53,7 @@ For each participant, the data at the interday (daily aggregate values) level, a
 
 ### Interview
 A short set of interview questions was be prepared prior to recruitment and was refined to reflect emerging knowledge as the research process progressed. The interviews were conducted in order to uncover the narratives and processes that reflect the realty of using a physical activity tracker. An Informed Grounded Theory approach was used to transcribe, code, and identify themes from the interviews. This approach is based on the use of prior research and literature to inform and focus attention on specific ideas or concepts during the qualitative research process (Thornberg, 2012). By using prior research, specifically the 93 BCTs in the BCTTv1, as well as findings from similarly designed studies, this process built on existing knowledge while simultaneously being open to the identification of new and unique themes and phenomena related to physical activity tracker use.
+
 ### Demographic Information.
 Participants completed a demographic questionnaire that included birth year, gender, race/ethnicity, education, height, weight, marital status, and household income.
 

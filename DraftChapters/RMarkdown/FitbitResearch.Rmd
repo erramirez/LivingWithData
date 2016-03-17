@@ -34,3 +34,7 @@ To date, Fitbit has not publically released any information related to the accur
 Everson and colleagues located seven studies that examined interdevice reliability of Fitbit devices. That is, studies examining reliabilty only examined multiple similar devices and/or location placement, but did not test wheter a single device remained reliable under consistent conditions. For steps, the Classic, Ultra, One, and Flex showed high reliability for walking and running. Reliability was also very high for different trackers (of the same type) and wearing in different locations (hip vs. pocket or different wrists) for both distance (one study) and energy expenditure (two studies).
 
 Overall the authors conlcuded that for the tested devices there is high validity for steps, and high interdevice reliability for steps and energy expenditure. It should be noted that to-date no validity or reliability studies have been published for the Fitbit Force (recalled), Fitbit Charge, Fitbit Charge HR, or Fitbit Surge.
+
+## Acceptability
+
+## Additional Research
