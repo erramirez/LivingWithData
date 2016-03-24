@@ -1,0 +1,24 @@
+# BCT Coding into Fitbit Work
+
+1.6 Discrepancy Between Current Behavior and Goal
+    Having the data and checking it against the goal prompts behavior
+
+2.2 Feedback on Behavior
+    Information about actual behavior in real-time (steps, distance, hr, etc)
+
+2.3 Self-monitoring of Behavior
+    Recording and interacting with their own data.
+
+2.6 Biofeedback
+    Provides more in-depth information about body, usually HR data.
+    
+6.3 Social Comparison
+    Weekly Rankings and/or Weekly Challenges
+
+8.5 Overcorrection
+    Attempting to go farther to meet goals because of "low" days.
+
+8.7 Graded Tasks
+    Badges for increased behavior
+    OR
+    user directed goal increases once goals are met for a period of time
