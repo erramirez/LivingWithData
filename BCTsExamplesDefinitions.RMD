@@ -1,4 +1,7 @@
 # BCT Coding into Fitbit Work
+1.1 Goal Setting (behavior)
+    Uses and pays attention to a goal.
+
 
 1.6 Discrepancy Between Current Behavior and Goal
     Having the data and checking it against the goal prompts behavior
@@ -11,9 +14,25 @@
 
 2.6 Biofeedback
     Provides more in-depth information about body, usually HR data.
-    
+
+3.1 Social Support (unspecified)
+    Using the messaging feature, but no mention of cheers and taunts.
+
+3.2 Social Support (practical)
+    Helping others understand how to get more steps.
+    Helping others by being active together.
+    Helping others by purchasing or recommending they buy Fitbits.
+
+
+ 3.3 Social Support
+    Using "cheers" and "taunts" in the messaging feature and/or in challenges.
+
+
 6.3 Social Comparison
     Weekly Rankings and/or Weekly Challenges
+
+7.1 Prompt/Cue
+    A notification to prompt behavior.
 
 8.5 Overcorrection
     Attempting to go farther to meet goals because of "low" days.
@@ -22,3 +41,12 @@
     Badges for increased behavior
     OR
     user directed goal increases once goals are met for a period of time
+
+10.3 Non-Specific Reward
+    A notification that a goal has been met with a congratulations or other positive message.
+
+10.10 Reward (outcome)
+    **Not sure if this counts for daily step goals** If you meet a daily step goal, is that an outcome or a behavior?
+
+11.3 Conserving mental resources
+    Individual creates mental models of exercise based on data and exprience with the Fitbit.
