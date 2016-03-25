@@ -21,7 +21,25 @@ Charging strategies as to not miss any steps.
 6.3 Social Comparison
     There is a difference between social comparison that is expressed through rankings in the weekly leaderboards and the social comparison that comes from participating in the challenges. Challenges seem to be more explicitly a competitive social comparison. Rank vs. Winning?
 
+    People also place difference emphasis on the leaderboard:
+        * Fun to see what people are doing - check up on friends.
+        * Want to be "winning"
+        * Want to maintain their place on the list
+        *
 
+3.1-3.3 Social Support
+    Many individuals report using communication systems outside of the fitbit ecosystem to have conversations with their friends and colleagues. This includes text messaging, facebook, and in person communication.
+
+1.1 Goal Setting
+    Some people think of goals as short term, daily goals. Others think of longer periods like weeks or years.
+    Sometimes the daily goals are superseeded by other things such as challenges.
+
+1.4 Action Planning
+    Sometimes it is generl action planning - be more active, move more during the day. But in other cases the individual uses the specific data associated with behaviors to plan their future actions/behavior. Like knowing how many steps to the car, so they can plan their day.
+    
 # Power Users
-    Hook up to othere apps and move data around
-    P1
+    Hook up to other apps and move data around
+    P1, P2
+
+# Multiple Devices
+    P1, P2, , p10, p11
