@@ -36,6 +36,12 @@
 **4.2 Information About Antecedents**
     Individuals create knowledge about what impacts their behavior. Most often this is in relation to physical environment, work sedentary behavior, and/or weather.
 
+**4.4 Behavioral Experiments**
+    Individual tries different tactics to see their effects on their activity, behavior, and/or data.
+
+**5.1 Information about health consequences**
+    Individual uses information about personal health to aid in their decision making.
+
 **6.2 Social Comparison**
     Weekly Rankings and/or Weekly Challenges
 
@@ -54,6 +60,9 @@
 **8.5 Overcorrection**
     Attempting to go farther to meet goals because of "low" days.
 
+**8.6 Generalization of a Target Behavior**
+    If the individual uses the fitbit and their activity (steps) to prompt them to engage in new activites .
+
 **8.7 Graded Tasks**
     Badges for increased behavior
     OR
@@ -62,6 +71,9 @@
 **9.3 Comparative Imagining of Future Outcomes**
     Individual is prompted to engage in behavior because they think of the effect of participating in the future.
     Can be related to challenges, self-thought, etc.
+
+**Material reward (behavior)**
+    Individual uses the fitbit to connect to systems that offer real rewards in the form of money, coupons, or discounts.
 
 **10.3 Non-Specific Reward**
     A notification that a goal has been met with a congratulations or other positive message.
@@ -88,6 +100,10 @@
     Individual changes their socail interactions or the methods around social environment to influence behavior.
         - change fitbit cases to be comfortable to wear in many situations
         - set up working walking groups,
+    ***Would buying fitbits for friends/family fit here?***
+    
+**13.1 Indentification of self as role model**
+    Individual uses their behavior as an example for others. Acts as support and encourages others. Must mention that this prompts their activity.
 
 **13.2 Framing/Reframing**
     Individual changes their perspective on being physically active, what it takes to get activity, or their own behavior.
@@ -106,6 +122,9 @@
 
 **15.3 Focus on Past Sucess**
     Exploring historical data to understand when goals were met and/or high activity days.
+    p19
+    I like to look at the report that'll show how I've done over the course of a month. Or I look at the year when my time or recently. I thought, "Wow! You did really well this time, this time, and this time. What's going on with this other time here?"
+    It's just a real cool visual for me.
 
 **15.4 Self-Talk**
     Individual uses positive self-talk to describe their activity behavior.

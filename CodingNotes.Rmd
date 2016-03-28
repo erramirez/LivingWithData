@@ -8,6 +8,10 @@ learning about your own behavior, health -> shaping knowledge?
 
 is learning about routes, and what counts -> shaping knowledge?
 
+modeling behavior and planning
+    p21: we get home late at night, so I don't want to walk all around. But there's like a particular light post that I'll walk to that isn't too far.
+    That's about 600 steps walking to it. So I figured out OK, I know that if I walk there and back, I can get 1,200. If I know that will put me over the mark, then I'll usually do that.
+
 
 health scares?
 
@@ -17,6 +21,9 @@ A big part of social support seems to be using steps as a way to check in on fri
 Something about round numbers and working to meet them. Mentioned a few times.
 
 Charging strategies as to not miss any steps.
+    People do odd things to make sure they get all their steps. Like wear it to sleep, even if they're not tracking sleep.
+
+
 
 6.3 Social Comparison
     There is a difference between social comparison that is expressed through rankings in the weekly leaderboards and the social comparison that comes from participating in the challenges. Challenges seem to be more explicitly a competitive social comparison. Rank vs. Winning?
@@ -25,7 +32,10 @@ Charging strategies as to not miss any steps.
         * Fun to see what people are doing - check up on friends.
         * Want to be "winning"
         * Want to maintain their place on the list
-        *
+        * others are watching
+
+        p21: Even though I can be not very active sometimes I can be very competitive, so if I know that I'm being compared to other people, then that definitely motivates me more. I find it motivating.
+        I know I definitely put the extra effort in to walk more, because I knew other people would be checking it.
 
 3.1-3.3 Social Support
     Many individuals report using communication systems outside of the fitbit ecosystem to have conversations with their friends and colleagues. This includes text messaging, facebook, and in person communication.
@@ -34,12 +44,29 @@ Charging strategies as to not miss any steps.
     Some people think of goals as short term, daily goals. Others think of longer periods like weeks or years.
     Sometimes the daily goals are superseeded by other things such as challenges.
 
+    People talk about their goals differently. Some use it very strictly, they like to meet it and don't think about it as something to strive for. Others review their activity and set it so that it means something special, reachable, but they have to actually work for it.
+
+
+
 1.4 Action Planning
     Sometimes it is generl action planning - be more active, move more during the day. But in other cases the individual uses the specific data associated with behaviors to plan their future actions/behavior. Like knowing how many steps to the car, so they can plan their day.
-    
-# Power Users
+
+Goal Discrepancy
+    There is a difference between the real goal discrepancy and when people set the arbitrary goals, like getting to round numbers. Some people have a real need/want to make sure they get the higher numbers and go out of their way to do that.
+
+
+Not meeting goals
+    many people talk about "not beating themselves up" when they miss their goal. They go on to try it tomorrow - clean slate.
+
+
+# Power Users **REVIEW**
     Hook up to other apps and move data around
-    P1, P2
+    P1, P2, p15, p10, p16, p17, p18,
 
 # Multiple Devices
-    P1, P2, , p10, p11
+    P1, P2, , p10, p11, p14, p18, p22, 26, p27, p30
+
+    p18 has a good quote here:
+    More than anything I missed it. Even though I wasn't doing as much conscious exercise back in 2012 and 2013, I still liked the consciousness raising part of it.
+    p27:
+    I've lost it and been scared to death, because of the cost first of all. I think I'd have to go out and buy another one. Even though it was $130, I'd have to wait for another paycheck but I would get it, but I would get me another one. That's how important it is.
