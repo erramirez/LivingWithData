@@ -3,6 +3,9 @@
 **1.1 Goal Setting (behavior)**
     Uses and pays attention to a goal.
 
+**1.2 Problem Solving**
+activity
+
 **1.4 Action Planning**
     Individual creates a plan to be physically active.
 
@@ -39,7 +42,7 @@
 **4.4 Behavioral Experiments**
     Individual tries different tactics to see their effects on their activity, behavior, and/or data.
 
-**5.1 Information about health consequences**
+**5.1 Information about Health Consequences**
     Individual uses information about personal health to aid in their decision making.
 
 **6.2 Social Comparison**
@@ -78,6 +81,9 @@
 **10.3 Non-Specific Reward**
     A notification that a goal has been met with a congratulations or other positive message.
 
+**10.4 Social Reward**
+    Individual mentions they recieve praise when they meet their goal, or do activity. Mostly through social means or group chat/cheers. Overlap with social support.
+
 **10.6 Non-Specific Incentive**
     Points or other incentive is promised to individual as a result of doing some activity. (two participants mention using Walkadoo for getting points)
 
@@ -101,7 +107,7 @@
         - change fitbit cases to be comfortable to wear in many situations
         - set up working walking groups,
     ***Would buying fitbits for friends/family fit here?***
-    
+
 **13.1 Indentification of self as role model**
     Individual uses their behavior as an example for others. Acts as support and encourages others. Must mention that this prompts their activity.
 
@@ -128,3 +134,6 @@
 
 **15.4 Self-Talk**
     Individual uses positive self-talk to describe their activity behavior.
+
+**16.3 Vicarious Consequences**
+    user mentions positive experiences from friends or colleagues.
