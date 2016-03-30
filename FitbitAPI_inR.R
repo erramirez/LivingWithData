@@ -22,7 +22,8 @@ df.daily <- get_daily_data(cookie, what="steps", start_date="2015-01-01", end_da
   
   
 ### Calling Fitbit API from R using OAuth2 ###
-  
+
+install.packages("devtools")  
 library(devtools)
 install_github("hadley/httr")
 library(httr)
@@ -35,7 +36,7 @@ fitbit_endpoint <- oauth_endpoint(
 myapp <- oauth_app(
     appname = "AccessR",
     key = "227PSZ", 
-    secret = "891adbefb2c5ad2eda092163193c6534")
+    secret = "4c141b683a70daf7d8361647d601ca66")
   
 # 2. Get OAuth token
   scope <- c("sleep","activity", "weight")  # See dev.fitbit.com/docs/oauth2/#scope
@@ -43,11 +44,15 @@ myapp <- oauth_app(
                                  scope = scope, use_basic_auth = TRUE)
   
 # 3. Make API requests
-  intraday <- GET(url = "https://api.fitbit.com/1/user/-/activities/steps/date/2016-03-20/2016-03-21/1min.json", config(token = fitbit_token))
+  max.steps <- GET(url = "https://api.fitbit.com/1/user/-/activities/steps/date/today/max.json", config(token = fitbit_token))
   intraday2 <- content(intraday)
 
-  steps1 <- content(steps)
+  steps1 <- content(max.steps)
+
+library(plyr)
+max.steps2 <- lapply(steps1, rbind)
   
+
 # convert JSON to a dataframe:
   data = NULL
   for (i in 1:length(content(steps)$`activities-steps`)) {
