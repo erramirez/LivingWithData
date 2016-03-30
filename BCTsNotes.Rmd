@@ -4,7 +4,7 @@
     Uses and pays attention to a goal.
 
 **1.2 Problem Solving**
-activity
+    ???
 
 **1.4 Action Planning**
     Individual creates a plan to be physically active.
@@ -14,6 +14,10 @@ activity
 
 **1.6 Discrepancy Between Current Behavior and Goal**
     Having the data and checking it against the goal prompts behavior
+
+**1.9 Commitment**
+    Affirm and/or reaffirm commitment to goals and/or behavior.
+
 
 **2.2 Feedback on Behavior**
     Information about actual behavior in real-time (steps, distance, hr, etc)
@@ -32,6 +36,8 @@ activity
     Helping others by being active together.
     Helping others by purchasing or recommending they buy Fitbits.
     Checking in on others
+
+    Directionality of support. - Is it receiveing support or supporting others? Might want to contain to only receiving support.
 
 **3.3 Social Support (emotional)**
     Using "cheers" and "taunts" in the messaging feature and/or in challenges.
@@ -118,7 +124,7 @@ activity
     Individual is faced with information that is counter to their previously held self-image. This creates discomfort (cognitive dissonance)
 
 **13.4 Valued Self-Identity**
-
+    Individual uses self-affirmation regarding their abilities to be active and/or participate in physical activity.
 
 **13.5 Identity Associated with Changed Behavior**
     Individual identifies themselves as someone active and/or healthy, which is different from their previous identification.
