@@ -1,0 +1,15 @@
+---
+title: "Results.MixedModel"
+author: "Ernesto Ramirez"
+date: "March 31, 2016"
+output: html_document
+---
+
+
+
+First step is to assess if fitting a random slope improves the unconditional linear growth model. This is accomplished by evaluating an ANOVA comparing the model fit of the unconditional linear growth models with and without the inclusion of random slopes. The inclusion of random slope for time significantly improved the model fit (X^2(2) = 482.55, p < .001). 
+
+Next, demographic variables were entered in to the model in a step wise fashion to determine if any participant characterists were significantly related to the change in step counts over time. 
+
+
+
