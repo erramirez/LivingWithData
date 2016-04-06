@@ -7,9 +7,13 @@ output: html_document
 
 
 
-First step is to assess if fitting a random slope improves the unconditional linear growth model. This is accomplished by evaluating an ANOVA comparing the model fit of the unconditional linear growth models with and without the inclusion of random slopes. The inclusion of random slope for time significantly improved the model fit (X^2(2) = 482.55, p < .001). 
+First step is to assess if fitting a random slope improves the unconditional linear growth model. This is accomplished by evaluating an ANOVA comparing the model fit of the unconditional linear growth models with and without the inclusion of random slopes. The inclusion of random slope for time significantly improved the model fit (X^2^(2) = 482.55, p < .001). A Q-Q plot of the residuals indicated that the data was heavy-tailed. Therefore the outcome variable, daily steps, was log transformed. 
 
-Next, demographic variables were entered in to the model in a step wise fashion to determine if any participant characterists were significantly related to the change in step counts over time. 
+
+
+Next, demographic variables were entered in to the model and backwards elimination of non-significant effects was performed in order to determine if any participant characterists were significantly related to the change in step counts over time. Age, Gender, BMI, Household Income, Education Level, and Type of Fitbit were all entered into the initial model. No demographic variables significantly improved model fit and therefore were not included in subsquent models. 
+
+A third model was created that included the 12 dichotomous BCT Domains, 
 
 
 
