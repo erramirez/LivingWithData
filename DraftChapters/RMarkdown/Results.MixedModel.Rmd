@@ -11,7 +11,7 @@ Time was rescaled to represent 30-day periods.
 
 The first step in the mixed model analysis was to assess if fitting a random slope improves the unconditional linear growth model. This was accomplished by evaluating an ANOVA comparing the model fit of the unconditional linear growth models with and without the inclusion of random slopes. The inclusion of random slope for time significantly improved the model fit (X^2^(2) = 454.44, p < .001). A Q-Q plot of the residuals indicated that the data was heavy-tailed. Therefore the outcome variable, daily steps, was log transformed for all remaining analyses. 
 
-Next, demographic variables were entered into the model as fixed effects (including interaction terms) and backwards elimination of non-significant effects was performed in order to determine if any participant characterists were significantly related to the change in step counts over time. Age, Gender, BMI, Household Income, Education Level, Type of Fitbit, and Data Affinity classification were all entered into the initial model. The fixed effect and interaction term for Education Level was retained as a significant predictor of daily step counts. The inclusion of the fixed effect and interaction term for Education Level signficantly improved the model fit ((X^2^(4) = 9.26, p < .01).
+Next, demographic variables were entered into the model as fixed effects (including interaction terms) and backwards elimination of non-significant effects was performed in order to determine if any participant characterists were significantly related to the change in step counts over time. Age, Gender, BMI, Household Income, Education Level, Type of Fitbit, and Data Affinity classification were all entered into the initial model. The fixed effect and interaction term for Education Level was retained as a significant predictor of daily step counts. The inclusion of the fixed effect and interaction term for Education Level signficantly improved the model fit ((X^2^(4) = 9.26, p = .01).
 The final demographic model is as follows:
 
 logSteps ~ timescale + Education2 + (timescale | ID) + timescale:Education2
@@ -24,8 +24,11 @@ Lastly, the remaining BCT domains were entered into the model and backwards elim
 
 logSteps ~ timescale + BCT6 + BCT9 + BCT12 + Education2 + (timescale | ID) + timescale:BCT6 + timescale:BCT9 + timescale:BCT12 + timescale:Education2
 
-Model estimates are available in Table TK. The model estimates in the final BCT model indicate that the when controlling for significant BCTs and Education level there is a significant negative fixed effect of time on daily steps. This effect is observed as a -6.8% decrease in daily total steps over a 30 day period (approximatesly one month) in this sample. 
+Model estimates are available in Table TK. The model estimates in the final BCT model indicate that the when controlling for significant BCTs and Education level there is a significant negative fixed effect of time on daily steps. This effect is observed as a -6.8% decrease in steps over a 30 day period (approximatesly one month) in this sample. 
 
+#BCT Strength Models
+Growth -> Demo = same
+Demo ->
 
 
 
