@@ -5,15 +5,26 @@ date: "March 31, 2016"
 output: html_document
 ---
 
+(REMEMBER TO TALK ABOUT EDUCATION LEVEL IN METHODS OR HERE)
+
+The first step in the mixed model analysis was to assess if fitting a random slope improves the unconditional linear growth model. This was accomplished by evaluating an ANOVA comparing the model fit of the unconditional linear growth models with and without the inclusion of random slopes. The inclusion of random slope for time significantly improved the model fit (X^2^(2) = 454.44, p < .001). A Q-Q plot of the residuals indicated that the data was heavy-tailed. Therefore the outcome variable, daily steps, was log transformed for all remaining analyses. 
+
+Next, demographic variables were entered into the model as fixed effectrs (including interaction terms) and backwards elimination of non-significant effects was performed in order to determine if any participant characterists were significantly related to the change in step counts over time. Age, Gender, BMI, Household Income, Education Level, Type of Fitbit, and Data Affinity classification were all entered into the initial model. The fixed effect and interaction term for Education Level was retained as a significant predictor of daily step counts. The inclusion of the fixed effect and interaction term for Education Level signficantly improved the model fit ((X^2^(4) = 21.77, p < .001).
+The final demographic model is as follows:
+
+logSteps ~ timescale + Education2 + (timescale | ID) + timescale:Education2
+
+Next, the BCT Domains which were found to be included in the design of the Fitbit were entered into the model and backwards elimination of non-significant effects was performed. Additionally, only BCT Domains with observed variability were entered into the model. BCT Domain 1 and  Domain 2, which were observed to be used by all participants, were not included in the model. This resulted in the inclusion of BCT Domains 3, 6, 7, 8, 10, and 15. The fixed effect and interaction term for Education Level was also included per the previous model fit. After the backwwards elimination was completed only the fixed effect and interaction term for BCT6, Comparison of Behavior, was retained from the initial set of BCTs entered at this stage. The inclusion of the fixed effect and interaction term for Comparison of Behavior signficantly improved the model fit ((X^2^(4) = 21.55, p < .001) when compared to the final demographic model. The final initial BCT model is as follows:
+
+logSteps ~ timescale + BCT6 + Education + (timescale | ID) + timescale:BCT6 + timescale:Education
+
+Lastly, the remaining BCT domains were entered into the model and backwards elimination of non-significant effects was performed. Both Education Level and BCT6 were retained (fixed effects and interaction term) per the previous model. After backwards elimination was completed, both BCT9, Comparison of Outcomes, and BCT12, Antecedents, were retained in the final model (fixed effects and interactions terms). The inclusion of these terms in the final model significantly improved model fit  ((X^2^(4) = 24.43, p < .001). The final BCT model is as follows:
+
+logSteps ~ timescale + BCT6 + BCT9 + BCT12 + Education2 + (timescale | ID) + timescale:BCT6 + timescale:BCT9 + timescale:BCT12 + timescale:Education2
+
+Model estimates are available in Table TK. The model estimates in the final BCT model indicate that the when controlling for significant BCTs and Education level there is a significant negative fixed effect of time on daily steps.   
 
 
-First step is to assess if fitting a random slope improves the unconditional linear growth model. This is accomplished by evaluating an ANOVA comparing the model fit of the unconditional linear growth models with and without the inclusion of random slopes. The inclusion of random slope for time significantly improved the model fit (X^2^(2) = 482.55, p < .001). A Q-Q plot of the residuals indicated that the data was heavy-tailed. Therefore the outcome variable, daily steps, was log transformed. 
 
 
-
-Next, demographic variables were entered in to the model and backwards elimination of non-significant effects was performed in order to determine if any participant characterists were significantly related to the change in step counts over time. Age, Gender, BMI, Household Income, Education Level, and Type of Fitbit were all entered into the initial model. No demographic variables significantly improved model fit and therefore were not included in subsquent models. 
-
-A third model was created that included the 12 dichotomous BCT Domains, 
-
-
-
+Estimates for the fixed effect of Education Level indicated that individuals who reported completing a graduate or professional degree were observed to have a 20.75% higher mean daily step count than those who had completed college or had some college coursework. Additionally, the  estimate of the interaction term between time and education level in  
