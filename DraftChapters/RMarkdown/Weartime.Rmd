@@ -50,5 +50,4 @@ WearTable <- ddply(Daily.Activity.Final, c("id"), summarise, 'Initial Available 
                    'Valid Days (Final)'=sum(Valid.Final)
                    )
 kable(WearTable, caption = "Table [TK]")
-
 ```

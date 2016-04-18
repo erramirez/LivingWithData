@@ -84,7 +84,35 @@ The 7-Day PAR is a validated, interview-administered, semi-structured physical a
 All participants were asked to complete a psychosocial survey designed to identify various aspects of physical activity behavior and thought processes. These measures, designed and validated for use with adult men and women include short surveys to determine decisional balance, self-efficacy, behavior change strategies, and social support related to physical activity behavior [@Carlson2012].
 
 ### Fitbit Data Processing
+## Usage, Wear Time, and Consistency
+_Usage_. There was a wide range for the length of time participants had been using a Fitbit device. To simplify understanding the the term, "Fitbit user period" is used to describe the total length of time a participant has been in identified as a user with the Fitbit ecosystem, from their initial sign-up with Fitbit until the date of their interview. It is possible that the Fitbit user period does not accurately reflect the total time a participant was using a Fitbit device. As stated previously, there may be days when individuals lose their devices, forget to put them on, or choose not to wear the device. These days are included when the historical data is accessed. This complete historical file was used in order to calculate the Fitbit user period. Participants in this study ranged from relatively new to using a Fitbit device to long-term users, with a range of 98 to 2,014 days (mean = 688.00, SD = 487.54).
 
+_Wear Time_.
+The initial review of all historical Fitbit data from the 30 participants included in this study resulted in a total of 20,637 participant-days of available Fitbit data.
+
+The first pass for non-wear time removed all days with zero steps, this reduced the full data set to 17,232 person days.
+
+Processing the minute-level MET data for each participant for algorithmically determined non-wear time resulted in further reduction to 15,954 days.
+
+A total of 757 minutes (0.003%) across all participants were classified as abnormal (> 200 steps/min). A total of 13 days were classified as invalid due to potentially abnormal data. Abnormal data represented between 12% and 82% of the total step count for the censured days. These 13 days were removed from further analysis resulting in 15,941 valid participants days.
+
+After the processing steps described above a total of 15,941 valid participant-days of data were used for analysis. The ratio of valid days to total available days per participant ranged from 10.22% to 99.27%. The number of days of data at each step in the previously described analysis is presented in Table [TK]. A visual representation of all valid wear days is presented in figure [TK].
+
+
+```{r}
+library(knitr)
+load("~/Dropbox/Dissertation.Data/Data/wear.days.table.rdata")
+kable(wear.days.table, caption = "Table [TK]: Valid Wear Time per Participant")
+```
+
+```{r, fig.cap = "Valid Days per Participant"}
+library(ggplot2)
+load("~/Dropbox/Dissertation.Data/FitbitData/ProcessedData/Daily.Activity.Final.rdata")
+ggplot(Daily.Activity.Final, aes(x=Date, y=Valid.Final)) +
+  geom_bar(stat="identity") +
+  scale_y_continuous(breaks=NULL, labels = NULL) +
+  facet_grid(id ~.)
+```
 ### Coding Interviews
 
 
