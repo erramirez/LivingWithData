@@ -42,9 +42,6 @@ Inclusion and exclusion criteria consisted of: 1) men and women between 18 and 6
 
 ## Primary and Secondary Outcome Measures
 
-[INCLUDE FitbitResearch.Rmd HERE]
-
-
 ### Fitbit Data Collection
 In addition to the user-centered components of the Fitbit system (device, application, and dashboard), Fitbit has developed and provides access to an application programming interface (API) so that outside entities can build tools and services to enhance the user experience. The API allows a third party to access and add to the data currently gathered and stored in the Fitbit database. These read/write privileges allow an application developer to build visualizations, reminder tools, and add additional services to existing behavioral or data storage platforms.
 
@@ -57,19 +54,39 @@ For each participant, data at the interday (daily aggregate values) level, and a
 
 ### Fitbit Data Processing
 _Usage_.
-There was a wide range for the length of time participants had been using a Fitbit device. To simplify understanding the the term, "Fitbit user period" is used to describe the total length of time a participant has been in identified as a user with the Fitbit ecosystem, from the date of the creation of a Fitbit use account until the date of their interview. It is possible that the Fitbit user period does not accurately reflect the total time a participant was using a Fitbit device. As stated previously, there may be days when individuals lose their devices, forget to put them on, or choose not to wear the device. These days are included when the historical data is accessed. This complete historical file was used in order to calculate the Fitbit user period. Participants in this study ranged from relatively new to using a Fitbit device to long-term users, with a range of 98 to 2,014 days. On average, participants in the current study had mean user period of 688 days (SD = 487.54).
+There was a wide range for the length of time participants had been using a Fitbit device. To simplify understanding the the term, "Fitbit user period" is used to describe the total length of time a participant has been in identified as a user with the Fitbit ecosystem, from the date of the creation of a Fitbit use account until the date of their interview. It is possible that the Fitbit user period does not accurately reflect the total time a participant was using a Fitbit device. As this data is retrospective in nature there is not guarantee that the participants were using their device and collecting physical activity information for each of the days present in their data files. Participants may have lost a device for a period of time, forgotten to wear their device, or even chosen not to wear it for a particular day or period of time. Even if the device is not worn, and it does not move, the data is still synced to Fitbit and made available through the API. Typically this results in a day with values equal to zero for physical activity data (steps, active minutes, distance, etc.). These days are included when the historical data is accessed. This complete historical file was used in order to calculate the Fitbit user period. Participants in this study ranged from relatively new to using a Fitbit device to long-term users, with a range of 98 to 2,014 days. On average, participants in the current study had mean user period of 688 days (SD = 487.54). The initial review of all historical Fitbit data from the 30 participants in this study resulted in a total of 20,637 participant-days of available Fitbit data. To better classify the available data, and use data that most accurately reflected actual device wear a multi-step wear time classification process was conducted.
 
-_Wear Time_.
-All available Fitbit data was
-The initial review of all historical Fitbit data from the 30 participants included in this study resulted in a total of 20,637 participant-days of available Fitbit data.
+_Wear Time Processing_.
+The first step for determining valid wear days was to detect and remove all days with zero steps. This initial pass reduced the full data set from 20,637 to 17,232 person-days.
 
-The first pass for non-wear time removed all days with zero steps, this reduced the full data set to 17,232 person days.
+The second step involved a typical weartime validation process commonly used when processing physical activity accelerometer data. Initially, minute-level step values were used to approximate the commonly used count measure produced by research accelerometers such as the ActiGraph GT3X. However, since accelerometer counts are derived from the intensity of the accelerometer movement in Actigraph models [@ActigraphCount], additional data sources provided by Fitbit were explored. Fitbit states:
 
-Processing the minute-level MET data for each participant for algorithmically determined non-wear time resulted in further reduction to 15,954 days.
+>All Fitbit trackers calculate active minutes using metabolic equivalents (METs). METs help measure the energy >expenditure of various activities. Because they do so in a comparable way among persons of different weights, METs are >widely used as indicators for exercise intensity. For example, a MET of 1 indicates a body at rest. Fitbit trackers >estimate your MET value in any given minute by calculating the intensity of your activity. [@FitbitMET]
 
-A total of 757 minutes (0.003%) across all participants were classified as abnormal (> 200 steps/min). A total of 13 days were classified as invalid due to potentially abnormal data. Abnormal data represented between 12% and 82% of the total step count for the censured days. These 13 days were removed from further analysis resulting in 15,941 valid participants days.
+Since the minute-level MET value provided by Fitbit is a more appropriate measure for inferring the movement of the actual device, and not a behavioral measure, like steps, this was used for wear time analysis.
 
-After the processing steps described above a total of 15,941 valid participant-days of data were used for analysis. The ratio of valid days to total available days per participant ranged from 10.22% to 99.27%. The number of days of data at each step in the previously described analysis is presented in Table [TK]. A visual representation of all valid wear days is presented in figure [TK].
+Minute-Level data files containing the date/time stamps and MET values were downloaded from Fitabase for each participant. The data was processed in R and the "accelerometry" package was used to analyze and flag period of non-wear time [@rstats; @accelerometry]. The data was processed using parameters commonly used for processing accelerometer data in physical activity research [@Troiano2008; @Choi2011]. These parameters include a minimum non-wear window of 90 minutes, a tolerance of two minutes for non-zero counts within a non-wear window, a maximal tolerance of two METs for a minute within the non-wear window. Additionally, processing was set to use a moving window to go through every possible 90-minute window in the data. Days were classified as valid if at least 600 minutes was classified as valid wear time within a 24hr day period using this processing method. Processing the minute-level MET data for each participant for algorithmically determined non-wear time resulted in further reduction to 15,954 valid person-days.
+
+##Visual Analysis
+To further inspect the Fitbit data for characteristics that would indicate invalid days a visual analysis of the data was employed. Each participant's minute-level step and MET data were plotted and inspected for uncharacteristic values and patterns. Specifically, this visual analysis of the minute-level data allowed for the identification of periods of data that could be attributed to device malfunctions or non-locomotor activity. Figure [TK] provides an annotated example of data that was identified as inconsistent with normal activity patterns.
+
+##Censuring Abnormal Data
+After the visual analysis it was determined that step values greater than or equal to 200 steps per minute should be classified as abnormal. As 200 steps per minute could be possibly achieved by the participants a conservative process was used to eliminate valid days that included abnormal minutes. Days previously marked as valid were censured if greater than ten percent of their daily step total was attributed to abnormal minutes.
+
+After the processing steps described above a total of 15,941 valid participant-days of data were used for analysis. The ratio of valid days to total available days per participant ranged from 10.22% to 99.27%. The number of days of data at each step in the previously described analysis is presented in Table [TK]. A visual representation of all valid wear days is presented in figure [TK]. It was determined that individuals who possesed less that 50% valid days to total available days (Valid Days / Fitbit User Period) would not be included in the statistical analysis as their data represents inconsistent wear behavior and may not be representative of actual physical activity behavior. These individuals' interviews were retained and included in the contextual analysis.
+
+
+```{r, results = 'asis'}
+library(knitr)
+library(plyr)
+load("~/Dropbox/Dissertation.Data/FitbitData/ProcessedData/Daily.Activity.Final.rdata")
+WearTable <- ddply(Daily.Activity.Final, c("id"), summarise, 'Initial Available Days'=length(id),
+                   'Valid Days (MET Processing)'=sum(ValidDay.Counts),
+                   'Valid Days (Censured)'=sum(ValidDay.Censured),
+                   'Valid Days (Final)'=sum(Valid.Final)
+                   )
+kable(WearTable, caption = "Table [TK]")
+```
 
 ### Interview
 A short set of interview questions was be prepared prior to recruitment and was refined to reflect emerging knowledge as the research process progressed. The interviews were conducted in order to uncover the narratives and processes that reflect the realty of using a physical activity tracker. An Informed Grounded Theory approach was used to transcribe, code, and identify themes from the interviews. This approach is based on the use of prior research and literature to inform and focus attention on specific ideas or concepts during the qualitative research process (Thornberg, 2012). By using prior research, specifically the 93 BCTs in the BCTTv1, as well as findings from similarly designed studies, this process built on existing knowledge while simultaneously being open to the identification of new and unique themes and phenomena related to physical activity tracker use.
@@ -83,21 +100,7 @@ The 7-Day PAR is a validated, interview-administered, semi-structured physical a
 ### Psychosocial Survey
 All participants were asked to complete a psychosocial survey designed to identify various aspects of physical activity behavior and thought processes. These measures, designed and validated for use with adult men and women include short surveys to determine decisional balance, self-efficacy, behavior change strategies, and social support related to physical activity behavior [@Carlson2012].
 
-### Fitbit Data Processing
-## Usage, Wear Time, and Consistency
-_Usage_. There was a wide range for the length of time participants had been using a Fitbit device. To simplify understanding the the term, "Fitbit user period" is used to describe the total length of time a participant has been in identified as a user with the Fitbit ecosystem, from their initial sign-up with Fitbit until the date of their interview. It is possible that the Fitbit user period does not accurately reflect the total time a participant was using a Fitbit device. As stated previously, there may be days when individuals lose their devices, forget to put them on, or choose not to wear the device. These days are included when the historical data is accessed. This complete historical file was used in order to calculate the Fitbit user period. Participants in this study ranged from relatively new to using a Fitbit device to long-term users, with a range of 98 to 2,014 days (mean = 688.00, SD = 487.54).
-
-_Wear Time_.
-The initial review of all historical Fitbit data from the 30 participants included in this study resulted in a total of 20,637 participant-days of available Fitbit data.
-
-The first pass for non-wear time removed all days with zero steps, this reduced the full data set to 17,232 person days.
-
-Processing the minute-level MET data for each participant for algorithmically determined non-wear time resulted in further reduction to 15,954 days.
-
-A total of 757 minutes (0.003%) across all participants were classified as abnormal (> 200 steps/min). A total of 13 days were classified as invalid due to potentially abnormal data. Abnormal data represented between 12% and 82% of the total step count for the censured days. These 13 days were removed from further analysis resulting in 15,941 valid participants days.
-
-After the processing steps described above a total of 15,941 valid participant-days of data were used for analysis. The ratio of valid days to total available days per participant ranged from 10.22% to 99.27%. The number of days of data at each step in the previously described analysis is presented in Table [TK]. A visual representation of all valid wear days is presented in figure [TK].
-
+#
 
 ```{r}
 library(knitr)
@@ -114,6 +117,7 @@ ggplot(Daily.Activity.Final, aes(x=Date, y=Valid.Final)) +
   facet_grid(id ~.)
 ```
 ### Coding Interviews
+
 
 
 
