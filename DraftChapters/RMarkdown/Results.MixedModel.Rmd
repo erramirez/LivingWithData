@@ -7,9 +7,9 @@ output: html_document
 
 (REMEMBER TO TALK ABOUT EDUCATION LEVEL IN METHODS OR HERE)
 
-Time was rescaled to represent 30-day periods. 
+Time was rescaled to represent 30-day periods.
 
-The first step in the mixed model analysis was to assess if fitting a random slope improves the unconditional linear growth model. This was accomplished by evaluating an ANOVA comparing the model fit of the unconditional linear growth models with and without the inclusion of random slopes. The inclusion of random slope for time significantly improved the model fit (X^2^(2) = 454.44, p < .001). A Q-Q plot of the residuals indicated that the data was heavy-tailed. Therefore the outcome variable, daily steps, was log transformed for all remaining analyses. 
+The first step in the mixed model analysis was to assess if fitting a random slope improves the unconditional linear growth model. This was accomplished by evaluating an ANOVA comparing the model fit of the unconditional linear growth models with and without the inclusion of random slopes. The inclusion of random slope for time significantly improved the model fit (X^2^(2) = 454.44, p < .001). A Q-Q plot of the residuals indicated that the data was heavy-tailed. Therefore the outcome variable, daily steps, was log transformed for all remaining analyses.
 
 Next, demographic variables were entered into the model as fixed effects (including interaction terms) and backwards elimination of non-significant effects was performed in order to determine if any participant characterists were significantly related to the change in step counts over time. Age, Gender, BMI, Household Income, Education Level, Type of Fitbit, and Data Affinity classification were all entered into the initial model. The fixed effect and interaction term for Education Level was retained as a significant predictor of daily step counts. The inclusion of the fixed effect and interaction term for Education Level signficantly improved the model fit ((X^2^(4) = 9.26, p = .01).
 The final demographic model is as follows:
@@ -24,7 +24,7 @@ Lastly, the remaining BCT domains were entered into the model and backwards elim
 
 logSteps ~ timescale + BCT6 + BCT9 + BCT12 + Education2 + (timescale | ID) + timescale:BCT6 + timescale:BCT9 + timescale:BCT12 + timescale:Education2
 
-Model estimates are available in Table TK. The model estimates in the final BCT model indicate that the when controlling for significant BCTs and Education level there is a significant negative fixed effect of time on daily steps. This effect is observed as a -6.8% decrease in steps over a 30 day period (approximatesly one month) in this sample. 
+Model estimates are available in Table TK. The model estimates in the final BCT model indicate that the when controlling for significant BCTs and Education level there is a significant negative fixed effect of time on daily steps. This effect is observed as a -6.8% decrease in steps over a 30 day period (approximatesly one month) in this sample.
 
 ##BCT Strength Models
 Growth -> Demo = same
@@ -36,13 +36,13 @@ BCT1 -> BCT2 = same
 ##MVPA Models
 
 ### BCT Domain
-A second set of mixed models were examined in order to determine the relationship between demographic variables and BCTs on daily minutes MVPA. As was previously completed for daily steps, the first set of models examined the effect of BCT use at the domain level. 
+A second set of mixed models were examined in order to determine the relationship between demographic variables and BCTs on daily minutes MVPA. As was previously completed for daily steps, the first set of models examined the effect of BCT use at the domain level.
 
 First, all demographic variables were entered into the model and backwards elimination was performed. No demographic variables were found to be significant. Thus, the final demographic model is equal to the unconditional growth model that includes the random effect of time. Next, the first set of BCTs (those included in the design of the Fitbit system), were entered into the model. After the backwwards elimination was completed only the fixed effect and interaction term for BCT6, Comparison of Behavior, was retained from the initial set of BCTs entered at this stage. The inclusion of the fixed effect and interaction term for Comparison of Behavior signficantly improved the model fit ((X^2^(4) = 6.95, p < 0.05) when compared to the final demographic model. The final initial BCT model is as follows:
 
 MVPABoutMin ~ Time30 + BCT6 + (Time30 | ID) + Time30:BCT6
 
-Lastly, the remaining BCTs were entered into the model. BCT6 (fixed effect and interaction term) was retained per the previous model. After backwards elimination was completed, both BCT9, Comparison of Outcomes, and BCT12, Antecedents, were retained in the final model. Only the interaction term for BCT9 was retained. The inclusion of these additional terms in the model significantly improved model fit ((X^2^(3) = 15.00, p = 0.002). 
+Lastly, the remaining BCTs were entered into the model. BCT6 (fixed effect and interaction term) was retained per the previous model. After backwards elimination was completed, both BCT9, Comparison of Outcomes, and BCT12, Antecedents, were retained in the final model. Only the interaction term for BCT9 was retained. The inclusion of these additional terms in the model significantly improved model fit ((X^2^(3) = 15.00, p = 0.002).
 
 ### BCT Strength
 
@@ -52,6 +52,4 @@ Lastly, the remaining BCTs were entered into the model. BCT1 and BCT6 (fixed eff
 
 
 
-
-
-Estimates for the fixed effect of Education Level indicated that individuals who reported completing a graduate or professional degree were observed to have a 20.75% higher mean daily step count than those who had completed college or had some college coursework. Additionally, the  estimate of the interaction term between time and education level in  
+Estimates for the fixed effect of Education Level indicated that individuals who reported completing a graduate or professional degree were observed to have a 20.75% higher mean daily step count than those who had completed college or had some college coursework. Additionally, the  estimate of the interaction term between time and education level in
