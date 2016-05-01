@@ -1,0 +1,31 @@
+---
+title: "Results.FitbitDesign"
+author: "Ernesto Ramirez"
+output:
+  word_document:
+csl: apa-no-ampersand.csl
+bibliography: library.bib
+---
+
+## BCT Identification
+
+A review of the Fitbit system (device(s), mobile apps, and website) identified a total of 17 BCTs available to users. The identified techniques were grouped within eight of the sixteen BCT domains in the BCTTv1. The techniques primarily clustered within the domains of *Goals and Planning* and *Feedback and Monitoring*, with five techniques identified in each these two domains. A complete list of all domains and specific techniques identified as being available to Fitbit users is available in Table TK. A comparison to the findings of similar work by Lyons and colleagues [-@Lyons2014] found that five techniques previously identified as being implemented by Fitbit were not applicable due to their focus on outcomes of behavior, in this case weight tracking and weight loss, and thus were excluded in the current study. An additional two techniques were also not identified as "native" to the design of the currently available Fitbit system at the time of this study. *Monitoring of Emotional Consequences* was previously identified as being available due to a "mood tracking" feature that was built into the Fitbit user's website (dashboard). That feature was removed in 2014, and therefore no longer applicable at the time of this study. *Adding Objects to the Environment* was also no longer considered applicable. The authors explained that this technique was identified because, "activity monitors were considered additions to the environment." [@Lyons2014]. The Fitbit system is designed to monitor and engage individuals with personal physical activity tracking, not as a "facilitator of performance" as defined in the BCTTv1 [@Miche2015]. Therefore this was considered an incorrect classification. One technique, *Prompts/Cues*, was identified that was not included in the previously mentioned analysis. This technique was included due to the availability of push notifications deployed by the Fitbit mobile applications. During the course of a day, the mobile applications may notify an individual of their behavior, specifically attempting to prompt behavior (steps) in order to reach a goal (see Figure TK). This fits within the definition provided by Michie et al. [-@Michie2015], who defined this technique as "stimulus with the purpose of prompting or cueing the behavior."
+
+## Qualitative Results
+
+### Domain Use
+Participants in this study used at least one BCT within 14 of the 16 (87.5%) domains identified in the BCTTv1. No responses in the transcripts were attributed and coded as expressing the use of BCTs within the domains of *Scheduled Consequences* or *Covert Learning*. Alternatively, all thirty participants were found to engage with techniques within the domains of *Goals and Planning* and *Feedback and Monitoring*. Table TK displays the number of participants who described actions that were attributed to the BCTs within each of the 16 domains.
+
+Of the eight BCT domains found to be incorporated into the design of the Fitbit system, seven were among the most commonly used by participants. Techniques with the *Associations* domain was reported to be used by only six participants, compared to the 20 to 30 participants who reported using techniques within the other seven domains available in the Fitbit system design. Of the domains that include techniques not available in the design of the Fitbit system, the most common domain was *Shaping Knowledge* with 22 participants (73.3%) who used techniques within this domain. On average, the eight domains that are included in the design of the Fitbit were used by over three times as many participants as those not included in the design (approximately 26 vs. 7 participants, respectively).
+
+### Technique Use
+At the technique level, 40 unique BCTs were identified as being used by participants. The most common techniques were *Goal-setting (behavior)*, *Feedback on Behavior*, and *Self-monitoring of Behavior*, with all thirty participants expressing the use of these techniques during the interview. The most infrequently reported BCTs were *Behavioral Experiments*, *Future Punishment*, *Identification of Self as Role Model*, and *Valued Self-identity*. Each of these techniques was used by only one participant in this study. Participants in the current study used between 8 and 20 unique techniques, with a mean of 14 techniques used per participant (SD = 3.08).
+
+ Participants used 20 techniques that are not available in the design of the Fitbit system. In some cases, these techniques serve as augmentations that rely on additional technologies or systems outside of Fitbit, but most are based on behaviors, knowledge, or thought processes that the participant developed as they used the Fitbit system. 
+
+ Table TK contains examples taken from participant's interviews that were coded for each of the 40 identified techniques.
+
+### Domain Representation
+BCTs
+
+Examples of BCTs
