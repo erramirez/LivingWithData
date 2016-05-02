@@ -1,0 +1,415 @@
+---
+title: "Appendix TK: Steps per Day Data Visualizations"
+author: "Ernesto Ramirez"
+date: "January 27, 2016"
+output:
+  word_document:
+       reference_docx: Background_v1.docx
+       fig_caption: true
+csl: apa-no-ampersand.csl
+bibliography: library.bib
+---
+
+# Appendix TK: Steps per Day Data Visualizations
+
+
+```{r global_options, include=FALSE}
+knitr::opts_chunk$set(echo=FALSE, warning=FALSE, message=FALSE)
+```
+
+```{r, fig.cap="Figure TK. Steps per Valid Day: Participant 1"}
+library(ggplot2)
+library(scales)
+load("~/Dropbox/Dissertation.Data/FinalData.MixedModel.Strength.rdata")
+
+P1Steps <- ggplot(data=subset(FinalData.MixedModel.Strength, ID == 1), aes(Date, Steps)) +
+  geom_point() +
+  geom_path() +
+  geom_hline(aes(yintercept=5581.91), colour="#BB0000", linetype="dashed") +
+   labs(x = "Date", y = "Steps per Day") +
+  scale_x_date(labels = date_format("%m/%d/%Y")) +
+  theme(axis.text.x  = element_text(angle=90, vjust=0.5))
+P1Steps
+```
+
+```{r, fig.cap="Figure TK. Steps per Valid Day: Participant 2"}
+library(ggplot2)
+library(scales)
+
+load("~/Dropbox/Dissertation.Data/FinalData.MixedModel.Strength.rdata")
+P2Steps <- ggplot(data=subset(FinalData.MixedModel.Strength, ID == 2), aes(Date, Steps)) +
+  geom_point() +
+  geom_path() +
+  geom_hline(aes(yintercept=8480.12), colour="#BB0000", linetype="dashed") +
+    labs(x = "Date", y = "Steps per Day") +
+  scale_x_date(labels = date_format("%m/%d/%Y")) +
+  theme(axis.text.x  = element_text(angle=90, vjust=0.5))
+P2Steps
+```
+
+```{r, fig.cap="Figure TK. Steps per Valid Day: Participant 3"}
+library(ggplot2)
+library(scales)
+
+load("~/Dropbox/Dissertation.Data/FinalData.MixedModel.Strength.rdata")
+P3Steps <- ggplot(data=subset(FinalData.MixedModel.Strength, ID == 3), aes(Date, Steps)) +
+  geom_point() +
+  geom_path() +
+  geom_hline(aes(yintercept=9723.65), colour="#BB0000", linetype="dashed") +
+   labs(x = "Date", y = "Steps per Day") +
+  scale_x_date(labels = date_format("%m/%d/%Y")) +
+  theme(axis.text.x  = element_text(angle=90, vjust=0.5))
+P3Steps
+```
+
+```{r, fig.cap="Figure TK. Steps per Valid Day: Participant 4"}
+library(ggplot2)
+library(scales)
+
+load("~/Dropbox/Dissertation.Data/FinalData.MixedModel.Strength.rdata")
+P4Steps <- ggplot(data=subset(FinalData.MixedModel.Strength, ID == 4), aes(Date, Steps)) +
+  geom_point() +
+  geom_path() +
+  geom_hline(aes(yintercept=19175.11), colour="#BB0000", linetype="dashed") +
+   labs(x = "Date", y = "Steps per Day") +   scale_x_date(labels = date_format("%m/%d/%Y")) +   theme(axis.text.x  = element_text(angle=90, vjust=0.5))
+P4Steps
+```
+
+```{r, fig.cap="Figure TK. Steps per Valid Day: Participant 5"}
+library(ggplot2)
+library(scales)
+
+load("~/Dropbox/Dissertation.Data/FinalData.MixedModel.Strength.rdata")
+P5Steps <- ggplot(data=subset(FinalData.MixedModel.Strength, ID == 5), aes(Date, Steps)) +
+  geom_point() +
+  geom_path() +
+  geom_hline(aes(yintercept=8543.10), colour="#BB0000", linetype="dashed") +
+   labs(x = "Date", y = "Steps per Day") +   scale_x_date(labels = date_format("%m/%d/%Y")) + theme(axis.text.x  = element_text(angle=90, vjust=0.5))
+P5Steps
+```
+
+```{r, fig.cap="Figure TK. Steps per Valid Day: Participant 6"}
+library(ggplot2)
+library(scales)
+
+load("~/Dropbox/Dissertation.Data/FinalData.MixedModel.Strength.rdata")
+P6Steps <- ggplot(data=subset(FinalData.MixedModel.Strength, ID == 6), aes(Date, Steps)) +
+  geom_point() +
+  geom_path() +
+  geom_hline(aes(yintercept=13571.36), colour="#BB0000", linetype="dashed") +
+   labs(x = "Date", y = "Steps per Day") +   scale_x_date(labels = date_format("%m/%d/%Y")) + theme(axis.text.x  = element_text(angle=90, vjust=0.5))
+P6Steps
+```
+
+```{r, fig.cap="Figure TK. Steps per Valid Day: Participant 7"}
+library(ggplot2)
+library(scales)
+
+load("~/Dropbox/Dissertation.Data/FinalData.MixedModel.Strength.rdata")
+P7Steps <- ggplot(data=subset(FinalData.MixedModel.Strength, ID == 7), aes(Date, Steps)) +
+  geom_point() +
+  geom_path() +
+  geom_hline(aes(yintercept=11971.79), colour="#BB0000", linetype="dashed") +
+   labs(x = "Date", y = "Steps per Day") +   scale_x_date(labels = date_format("%m/%d/%Y")) + theme(axis.text.x  = element_text(angle=90, vjust=0.5))
+P7Steps
+```
+
+```{r, fig.cap="Figure TK. Steps per Valid Day: Participant 8"}
+library(ggplot2)
+library(scales)
+
+load("~/Dropbox/Dissertation.Data/FinalData.MixedModel.Strength.rdata")
+P8Steps <- ggplot(data=subset(FinalData.MixedModel.Strength, ID == 8), aes(Date, Steps)) +
+  geom_point() +
+  geom_path() +
+  geom_hline(aes(yintercept=7174.13), colour="#BB0000", linetype="dashed") +
+   labs(x = "Date", y = "Steps per Day") +   scale_x_date(labels = date_format("%m/%d/%Y")) + theme(axis.text.x  = element_text(angle=90, vjust=0.5))
+P8Steps
+```
+
+```{r, fig.cap="Figure TK. Steps per Valid Day: Participant 9"}
+library(ggplot2)
+library(scales)
+
+load("~/Dropbox/Dissertation.Data/FinalData.MixedModel.Strength.rdata")
+P9Steps <- ggplot(data=subset(FinalData.MixedModel.Strength, ID == 9), aes(Date, Steps)) +
+  geom_point() +
+  geom_path() +
+  geom_hline(aes(yintercept=8666.74), colour="#BB0000", linetype="dashed") +
+   labs(x = "Date", y = "Steps per Day") +   scale_x_date(labels = date_format("%m/%d/%Y")) + theme(axis.text.x  = element_text(angle=90, vjust=0.5))
+P9Steps
+```
+
+```{r, fig.cap="Figure TK. Steps per Valid Day: Participant 10"}
+library(ggplot2)
+library(scales)
+
+load("~/Dropbox/Dissertation.Data/FinalData.MixedModel.Strength.rdata")
+P10Steps <- ggplot(data=subset(FinalData.MixedModel.Strength, ID == 10), aes(Date, Steps)) +
+  geom_point() +
+  geom_path() +
+  geom_hline(aes(yintercept=14399.21), colour="#BB0000", linetype="dashed") +
+   labs(x = "Date", y = "Steps per Day") +   scale_x_date(labels = date_format("%m/%d/%Y")) + theme(axis.text.x  = element_text(angle=90, vjust=0.5))
+P10Steps
+```
+
+```{r, fig.cap="Figure TK. Steps per Valid Day: Participant 11"}
+library(ggplot2)
+library(scales)
+
+load("~/Dropbox/Dissertation.Data/FinalData.MixedModel.Strength.rdata")
+P11Steps <- ggplot(data=subset(FinalData.MixedModel.Strength, ID == 11), aes(Date, Steps)) +
+  geom_point() +
+  geom_path() +
+  geom_hline(aes(yintercept=11182.72), colour="#BB0000", linetype="dashed") +
+   labs(x = "Date", y = "Steps per Day") +   scale_x_date(labels = date_format("%m/%d/%Y")) + theme(axis.text.x  = element_text(angle=90, vjust=0.5))
+P11Steps
+```
+
+```{r, fig.cap="Figure TK. Steps per Valid Day: Participant 12"}
+library(ggplot2)
+library(scales)
+
+load("~/Dropbox/Dissertation.Data/FinalData.MixedModel.Strength.rdata")
+P12Steps <- ggplot(data=subset(FinalData.MixedModel.Strength, ID == 12), aes(Date, Steps)) +
+  geom_point() +
+  geom_path() +
+  geom_hline(aes(yintercept=10779.68), colour="#BB0000", linetype="dashed") +
+   labs(x = "Date", y = "Steps per Day") +   scale_x_date(labels = date_format("%m/%d/%Y")) + theme(axis.text.x  = element_text(angle=90, vjust=0.5))
+P12Steps
+```
+
+```{r, fig.cap="Figure TK. Steps per Valid Day: Participant 13"}
+library(ggplot2)
+library(scales)
+
+load("~/Dropbox/Dissertation.Data/FinalData.MixedModel.Strength.rdata")
+P13Steps <- ggplot(data=subset(FinalData.MixedModel.Strength, ID == 13), aes(Date, Steps)) +
+  geom_point() +
+  geom_path() +
+  geom_hline(aes(yintercept=8389.19), colour="#BB0000", linetype="dashed") +
+   labs(x = "Date", y = "Steps per Day") +   scale_x_date(labels = date_format("%m/%d/%Y")) + theme(axis.text.x  = element_text(angle=90, vjust=0.5))
+P13Steps
+```
+
+```{r, fig.cap="Figure TK. Steps per Valid Day: Participant 14"}
+library(ggplot2)
+library(scales)
+
+load("~/Dropbox/Dissertation.Data/FinalData.MixedModel.Strength.rdata")
+P14Steps <- ggplot(data=subset(FinalData.MixedModel.Strength, ID == 14), aes(Date, Steps)) +
+  geom_point() +
+  geom_path() +
+  geom_hline(aes(yintercept=8972.78), colour="#BB0000", linetype="dashed") +
+   labs(x = "Date", y = "Steps per Day") +   scale_x_date(labels = date_format("%m/%d/%Y")) + theme(axis.text.x  = element_text(angle=90, vjust=0.5))
+P14Steps
+```
+
+```{r, fig.cap="Figure TK. Steps per Valid Day: Participant 15"}
+library(ggplot2)
+library(scales)
+
+load("~/Dropbox/Dissertation.Data/FinalData.MixedModel.Strength.rdata")
+P15Steps <- ggplot(data=subset(FinalData.MixedModel.Strength, ID == 15), aes(Date, Steps)) +
+  geom_point() +
+  geom_path() +
+  geom_hline(aes(yintercept=7672.63), colour="#BB0000", linetype="dashed") +
+   labs(x = "Date", y = "Steps per Day") +   scale_x_date(labels = date_format("%m/%d/%Y")) + theme(axis.text.x  = element_text(angle=90, vjust=0.5))
+P15Steps
+```
+
+```{r, fig.cap="Figure TK. Steps per Valid Day: Participant 16"}
+library(ggplot2)
+library(scales)
+
+load("~/Dropbox/Dissertation.Data/FinalData.MixedModel.Strength.rdata")
+P16Steps <- ggplot(data=subset(FinalData.MixedModel.Strength, ID == 16), aes(Date, Steps)) +
+  geom_point() +
+  geom_path() +
+  geom_hline(aes(yintercept=11542.66), colour="#BB0000", linetype="dashed") +
+   labs(x = "Date", y = "Steps per Day") +   scale_x_date(labels = date_format("%m/%d/%Y")) + theme(axis.text.x  = element_text(angle=90, vjust=0.5))
+P16Steps
+```
+
+```{r, fig.cap="Figure TK. Steps per Valid Day: Participant 17"}
+library(ggplot2)
+library(scales)
+
+load("~/Dropbox/Dissertation.Data/FinalData.MixedModel.Strength.rdata")
+P17Steps <- ggplot(data=subset(FinalData.MixedModel.Strength, ID == 17), aes(Date, Steps)) +
+  geom_point() +
+  geom_path() +
+  geom_hline(aes(yintercept=9308.26), colour="#BB0000", linetype="dashed") +
+   labs(x = "Date", y = "Steps per Day") +   scale_x_date(labels = date_format("%m/%d/%Y")) + theme(axis.text.x  = element_text(angle=90, vjust=0.5))
+P17Steps
+```
+
+```{r, fig.cap="Figure TK. Steps per Valid Day: Participant 18"}
+library(ggplot2)
+library(scales)
+
+load("~/Dropbox/Dissertation.Data/FinalData.MixedModel.Strength.rdata")
+P18Steps <- ggplot(data=subset(FinalData.MixedModel.Strength, ID == 18), aes(Date, Steps)) +
+  geom_point() +
+  geom_path() +
+  geom_hline(aes(yintercept=9519.48), colour="#BB0000", linetype="dashed") +
+   labs(x = "Date", y = "Steps per Day") +   scale_x_date(labels = date_format("%m/%d/%Y")) + theme(axis.text.x  = element_text(angle=90, vjust=0.5))
+P18Steps
+```
+
+```{r, fig.cap="Figure TK. Steps per Valid Day: Participant 19"}
+library(ggplot2)
+library(scales)
+
+load("~/Dropbox/Dissertation.Data/FinalData.MixedModel.Strength.rdata")
+P19Steps <- ggplot(data=subset(FinalData.MixedModel.Strength, ID == 19), aes(Date, Steps)) +
+  geom_point() +
+  geom_path() +
+  geom_hline(aes(yintercept=10932.27), colour="#BB0000", linetype="dashed") +
+   labs(x = "Date", y = "Steps per Day") +   scale_x_date(labels = date_format("%m/%d/%Y")) + theme(axis.text.x  = element_text(angle=90, vjust=0.5))
+P19Steps
+```
+
+```{r, fig.cap="Figure TK. Steps per Valid Day: Participant 20"}
+library(ggplot2)
+library(scales)
+
+load("~/Dropbox/Dissertation.Data/FinalData.MixedModel.Strength.rdata")
+P20Steps <- ggplot(data=subset(FinalData.MixedModel.Strength, ID == 20), aes(Date, Steps)) +
+  geom_point() +
+  geom_path() +
+  geom_hline(aes(yintercept=3446.36), colour="#BB0000", linetype="dashed") +
+   labs(x = "Date", y = "Steps per Day") +   scale_x_date(labels = date_format("%m/%d/%Y")) + theme(axis.text.x  = element_text(angle=90, vjust=0.5))
+P20Steps
+```
+
+```{r, fig.cap="Figure TK. Steps per Valid Day: Participant 21"}
+library(ggplot2)
+library(scales)
+
+load("~/Dropbox/Dissertation.Data/FinalData.MixedModel.Strength.rdata")
+P21Steps <- ggplot(data=subset(FinalData.MixedModel.Strength, ID == 21), aes(Date, Steps)) +
+  geom_point() +
+  geom_path() +
+  geom_hline(aes(yintercept=7494.43), colour="#BB0000", linetype="dashed") +
+   labs(x = "Date", y = "Steps per Day") +   scale_x_date(labels = date_format("%m/%d/%Y")) + theme(axis.text.x  = element_text(angle=90, vjust=0.5))
+P21Steps
+```
+
+```{r, fig.cap="Figure TK. Steps per Valid Day: Participant 22"}
+library(ggplot2)
+library(scales)
+
+load("~/Dropbox/Dissertation.Data/FinalData.MixedModel.Strength.rdata")
+P22Steps <- ggplot(data=subset(FinalData.MixedModel.Strength, ID == 22), aes(Date, Steps)) +
+  geom_point() +
+  geom_path() +
+  geom_hline(aes(yintercept=7880.07), colour="#BB0000", linetype="dashed") +
+   labs(x = "Date", y = "Steps per Day") +   scale_x_date(labels = date_format("%m/%d/%Y")) + theme(axis.text.x  = element_text(angle=90, vjust=0.5))
+P22Steps
+```
+
+```{r, fig.cap="Figure TK. Steps per Valid Day: Participant 23"}
+library(ggplot2)
+library(scales)
+
+load("~/Dropbox/Dissertation.Data/FinalData.MixedModel.Strength.rdata")
+P23Steps <- ggplot(data=subset(FinalData.MixedModel.Strength, ID == 23), aes(Date, Steps)) +
+  geom_point() +
+  geom_path() +
+  geom_hline(aes(yintercept=10550.87), colour="#BB0000", linetype="dashed") +
+   labs(x = "Date", y = "Steps per Day") +   scale_x_date(labels = date_format("%m/%d/%Y")) + theme(axis.text.x  = element_text(angle=90, vjust=0.5))
+P23Steps
+```
+
+```{r, fig.cap="Figure TK. Steps per Valid Day: Participant 24"}
+library(ggplot2)
+library(scales)
+
+load("~/Dropbox/Dissertation.Data/FinalData.MixedModel.Strength.rdata")
+P24Steps <- ggplot(data=subset(FinalData.MixedModel.Strength, ID == 24), aes(Date, Steps)) +
+  geom_point() +
+  geom_path() +
+  geom_hline(aes(yintercept=9260.54), colour="#BB0000", linetype="dashed") +
+   labs(x = "Date", y = "Steps per Day") +   scale_x_date(labels = date_format("%m/%d/%Y")) + theme(axis.text.x  = element_text(angle=90, vjust=0.5))
+P24Steps
+```
+
+```{r, fig.cap="Figure TK. Steps per Valid Day: Participant 25"}
+library(ggplot2)
+library(scales)
+
+load("~/Dropbox/Dissertation.Data/FinalData.MixedModel.Strength.rdata")
+P25Steps <- ggplot(data=subset(FinalData.MixedModel.Strength, ID == 25), aes(Date, Steps)) +
+  geom_point() +
+  geom_path() +
+  geom_hline(aes(yintercept=14577.97), colour="#BB0000", linetype="dashed") +
+   labs(x = "Date", y = "Steps per Day") +   scale_x_date(labels = date_format("%m/%d/%Y")) + theme(axis.text.x  = element_text(angle=90, vjust=0.5))
+P25Steps
+```
+
+```{r, fig.cap="Figure TK. Steps per Valid Day: Participant 26"}
+library(ggplot2)
+library(scales)
+
+load("~/Dropbox/Dissertation.Data/FinalData.MixedModel.Strength.rdata")
+P26Steps <- ggplot(data=subset(FinalData.MixedModel.Strength, ID == 26), aes(Date, Steps)) +
+  geom_point() +
+  geom_path() +
+  geom_hline(aes(yintercept=19214.67), colour="#BB0000", linetype="dashed") +
+   labs(x = "Date", y = "Steps per Day") +   scale_x_date(labels = date_format("%m/%d/%Y")) + theme(axis.text.x  = element_text(angle=90, vjust=0.5))
+P26Steps
+```
+
+```{r, fig.cap="Figure TK. Steps per Valid Day: Participant 27"}
+library(ggplot2)
+library(scales)
+
+load("~/Dropbox/Dissertation.Data/FinalData.MixedModel.Strength.rdata")
+P27Steps <- ggplot(data=subset(FinalData.MixedModel.Strength, ID == 27), aes(Date, Steps)) +
+  geom_point() +
+  geom_path() +
+  geom_hline(aes(yintercept=9558.14), colour="#BB0000", linetype="dashed") +
+   labs(x = "Date", y = "Steps per Day") +   scale_x_date(labels = date_format("%m/%d/%Y")) + theme(axis.text.x  = element_text(angle=90, vjust=0.5))
+P27Steps
+```
+
+```{r, fig.cap="Figure TK. Steps per Valid Day: Participant 28"}
+library(ggplot2)
+library(scales)
+
+load("~/Dropbox/Dissertation.Data/FinalData.MixedModel.Strength.rdata")
+P28Steps <- ggplot(data=subset(FinalData.MixedModel.Strength, ID == 28), aes(Date, Steps)) +
+  geom_point() +
+  geom_path() +
+  geom_hline(aes(yintercept=10038.25), colour="#BB0000", linetype="dashed") +
+   labs(x = "Date", y = "Steps per Day") +   scale_x_date(labels = date_format("%m/%d/%Y")) + theme(axis.text.x  = element_text(angle=90, vjust=0.5))
+P28Steps
+```
+
+```{r, fig.cap="Figure TK. Steps per Valid Day: Participant 29"}
+library(ggplot2)
+library(scales)
+
+load("~/Dropbox/Dissertation.Data/FinalData.MixedModel.Strength.rdata")
+P29Steps <- ggplot(data=subset(FinalData.MixedModel.Strength, ID == 29), aes(Date, Steps)) +
+  geom_point() +
+  geom_path() +
+  geom_hline(aes(yintercept=6237.06), colour="#BB0000", linetype="dashed") +
+   labs(x = "Date", y = "Steps per Day") +   scale_x_date(labels = date_format("%m/%d/%Y")) + theme(axis.text.x  = element_text(angle=90, vjust=0.5))
+P29Steps
+```
+
+```{r, fig.cap="Figure TK. Steps per Valid Day: Participant 30"}
+library(ggplot2)
+library(scales)
+
+load("~/Dropbox/Dissertation.Data/FinalData.MixedModel.Strength.rdata")
+P30Steps <- ggplot(data=subset(FinalData.MixedModel.Strength, ID == 30), aes(Date, Steps)) +
+  geom_point() +
+  geom_path() +
+  geom_hline(aes(yintercept=9057.99), colour="#BB0000", linetype="dashed") +
+   labs(x = "Date", y = "Steps per Day") +   scale_x_date(labels = date_format("%m/%d/%Y")) + theme(axis.text.x  = element_text(angle=90, vjust=0.5))
+P30Steps
+
+```

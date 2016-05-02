@@ -61,7 +61,7 @@ Not meeting goals
 
 # Power Users **REVIEW**
     Hook up to other apps and move data around
-    P1, P2, p15, p10, p16, p17, p18,
+    P1, P2, 3  p10, 11 12 p15, p16, p17, p18,
 
 # Multiple Devices
     P1, P2, , p10, p11, p14, p18, p22, 26, p27, p30

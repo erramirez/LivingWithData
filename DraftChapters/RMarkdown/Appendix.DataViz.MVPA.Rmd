@@ -1,0 +1,355 @@
+---
+title: "Appendix TK: MVPABoutMin per Day Data Visualizations"
+author: "Ernesto Ramirez"
+date: "January 27, 2016"
+output:
+  word_document:
+       reference_docx: Background_v1.docx
+       fig_caption: true
+csl: apa-no-ampersand.csl
+bibliography: library.bib
+---
+
+# Appendix TK: Minutes of MVPA (Bouts) per Day Data Visualizations
+
+
+```{r global_options, include=FALSE}
+knitr::opts_chunk$set(echo=FALSE, warning=FALSE, message=FALSE)
+```
+
+```{r, fig.cap="Figure TK. Minutes of MVPA (Bouts) per Valid Day: Participant 1"}
+library(ggplot2)
+library(scales)
+load("~/Dropbox/Dissertation.Data/FinalData.MixedModel.Strength.rdata")
+
+P1MVPABoutMin <- ggplot(data=subset(FinalData.MixedModel.Strength, ID == 1), aes(Date, MVPABoutMin)) +
+  geom_point() +
+  geom_path() +
+  geom_hline(aes(yintercept=7.88), colour="#BB0000", linetype="dashed") +
+  labs(x = "Date", y = "Minutes of MVPA per Day") +
+ scale_x_date(labels = date_format("%m/%d/%Y")) +
+ theme(axis.text.x  = element_text(angle=90, vjust=0.5))
+P1MVPABoutMin
+```
+
+```{r, fig.cap="Figure TK. Minutes of MVPA (Bouts) per Valid Day: Participant 2"}
+library(ggplot2)
+library(scales)
+load("~/Dropbox/Dissertation.Data/FinalData.MixedModel.Strength.rdata")
+P2MVPABoutMin <- ggplot(data=subset(FinalData.MixedModel.Strength, ID == 2), aes(Date, MVPABoutMin)) +
+  geom_point() +
+  geom_path() +
+  geom_hline(aes(yintercept=15.76), colour="#BB0000", linetype="dashed") +
+  labs(x = "Date", y = "Minutes of MVPA per Day") +
+ scale_x_date(labels = date_format("%m/%d/%Y")) +
+ theme(axis.text.x  = element_text(angle=90, vjust=0.5))
+P2MVPABoutMin
+```
+
+```{r, fig.cap="Figure TK. Minutes of MVPA (Bouts) per Valid Day: Participant 3"}
+P3MVPABoutMin <- ggplot(data=subset(FinalData.MixedModel.Strength, ID == 3), aes(Date, MVPABoutMin)) +
+  geom_point() +
+  geom_path() +
+  geom_hline(aes(yintercept=36.97), colour="#BB0000", linetype="dashed") +
+  labs(x = "Date", y = "Minutes of MVPA per Day") +
+ scale_x_date(labels = date_format("%m/%d/%Y")) +
+ theme(axis.text.x  = element_text(angle=90, vjust=0.5))
+P3MVPABoutMin
+```
+
+```{r, fig.cap="Figure TK. Minutes of MVPA (Bouts) per Valid Day: Participant 4"}
+P4MVPABoutMin <- ggplot(data=subset(FinalData.MixedModel.Strength, ID == 4), aes(Date, MVPABoutMin)) +
+  geom_point() +
+  geom_path() +
+  geom_hline(aes(yintercept=61.51), colour="#BB0000", linetype="dashed") +
+  labs(x = "Date", y = "Minutes of MVPA per Day") +
+ scale_x_date(labels = date_format("%m/%d/%Y")) +
+ theme(axis.text.x  = element_text(angle=90, vjust=0.5))
+P4MVPABoutMin
+```
+
+```{r, fig.cap="Figure TK. Minutes of MVPA (Bouts) per Valid Day: Participant 5"}
+P5MVPABoutMin <- ggplot(data=subset(FinalData.MixedModel.Strength, ID == 5), aes(Date, MVPABoutMin)) +
+  geom_point() +
+  geom_path() +
+  geom_hline(aes(yintercept=24.59), colour="#BB0000", linetype="dashed") +
+  labs(x = "Date", y = "Minutes of MVPA per Day") +
+ scale_x_date(labels = date_format("%m/%d/%Y")) +
+ theme(axis.text.x  = element_text(angle=90, vjust=0.5))
+P5MVPABoutMin
+```
+
+```{r, fig.cap="Figure TK. Minutes of MVPA (Bouts) per Valid Day: Participant 6"}
+P6MVPABoutMin <- ggplot(data=subset(FinalData.MixedModel.Strength, ID == 6), aes(Date, MVPABoutMin)) +
+  geom_point() +
+  geom_path() +
+  geom_hline(aes(yintercept=46.07), colour="#BB0000", linetype="dashed") +
+  labs(x = "Date", y = "Minutes of MVPA per Day") +
+ scale_x_date(labels = date_format("%m/%d/%Y")) +
+ theme(axis.text.x  = element_text(angle=90, vjust=0.5))
+P6MVPABoutMin
+```
+
+```{r, fig.cap="Figure TK. Minutes of MVPA (Bouts) per Valid Day: Participant 7"}
+P7MVPABoutMin <- ggplot(data=subset(FinalData.MixedModel.Strength, ID == 7), aes(Date, MVPABoutMin)) +
+  geom_point() +
+  geom_path() +
+  geom_hline(aes(yintercept=61.43), colour="#BB0000", linetype="dashed") +
+  labs(x = "Date", y = "Minutes of MVPA per Day") +
+ scale_x_date(labels = date_format("%m/%d/%Y")) +
+ theme(axis.text.x  = element_text(angle=90, vjust=0.5))
+P7MVPABoutMin
+```
+
+```{r, fig.cap="Figure TK. Minutes of MVPA (Bouts) per Valid Day: Participant 8"}
+P8MVPABoutMin <- ggplot(data=subset(FinalData.MixedModel.Strength, ID == 8), aes(Date, MVPABoutMin)) +
+  geom_point() +
+  geom_path() +
+  geom_hline(aes(yintercept=18.50), colour="#BB0000", linetype="dashed") +
+  labs(x = "Date", y = "Minutes of MVPA per Day") +
+ scale_x_date(labels = date_format("%m/%d/%Y")) +
+ theme(axis.text.x  = element_text(angle=90, vjust=0.5))
+P8MVPABoutMin
+```
+
+```{r, fig.cap="Figure TK. Minutes of MVPA (Bouts) per Valid Day: Participant 9"}
+P9MVPABoutMin <- ggplot(data=subset(FinalData.MixedModel.Strength, ID == 9), aes(Date, MVPABoutMin)) +
+  geom_point() +
+  geom_path() +
+  geom_hline(aes(yintercept=17.78), colour="#BB0000", linetype="dashed") +
+  labs(x = "Date", y = "Minutes of MVPA per Day") +
+ scale_x_date(labels = date_format("%m/%d/%Y")) +
+ theme(axis.text.x  = element_text(angle=90, vjust=0.5))
+P9MVPABoutMin
+```
+
+```{r, fig.cap="Figure TK. Minutes of MVPA (Bouts) per Valid Day: Participant 10"}
+P10MVPABoutMin <- ggplot(data=subset(FinalData.MixedModel.Strength, ID == 10), aes(Date, MVPABoutMin)) +
+  geom_point() +
+  geom_path() +
+  geom_hline(aes(yintercept=62.15), colour="#BB0000", linetype="dashed") +
+  labs(x = "Date", y = "Minutes of MVPA per Day") +
+ scale_x_date(labels = date_format("%m/%d/%Y")) +
+ theme(axis.text.x  = element_text(angle=90, vjust=0.5))
+P10MVPABoutMin
+```
+
+```{r, fig.cap="Figure TK. Minutes of MVPA (Bouts) per Valid Day: Participant 11"}
+P11MVPABoutMin <- ggplot(data=subset(FinalData.MixedModel.Strength, ID == 11), aes(Date, MVPABoutMin)) +
+  geom_point() +
+  geom_path() +
+  geom_hline(aes(yintercept=58.66), colour="#BB0000", linetype="dashed") +
+  labs(x = "Date", y = "Minutes of MVPA per Day") +
+ scale_x_date(labels = date_format("%m/%d/%Y")) +
+ theme(axis.text.x  = element_text(angle=90, vjust=0.5))
+P11MVPABoutMin
+```
+
+```{r, fig.cap="Figure TK. Minutes of MVPA (Bouts) per Valid Day: Participant 12"}
+P12MVPABoutMin <- ggplot(data=subset(FinalData.MixedModel.Strength, ID == 12), aes(Date, MVPABoutMin)) +
+  geom_point() +
+  geom_path() +
+  geom_hline(aes(yintercept=37.90), colour="#BB0000", linetype="dashed") +
+  labs(x = "Date", y = "Minutes of MVPA per Day") +
+ scale_x_date(labels = date_format("%m/%d/%Y")) +
+ theme(axis.text.x  = element_text(angle=90, vjust=0.5))
+P12MVPABoutMin
+```
+
+```{r, fig.cap="Figure TK. Minutes of MVPA (Bouts) per Valid Day: Participant 13"}
+P13MVPABoutMin <- ggplot(data=subset(FinalData.MixedModel.Strength, ID == 13), aes(Date, MVPABoutMin)) +
+  geom_point() +
+  geom_path() +
+  geom_hline(aes(yintercept=16.22), colour="#BB0000", linetype="dashed") +
+  labs(x = "Date", y = "Minutes of MVPA per Day") +
+ scale_x_date(labels = date_format("%m/%d/%Y")) +
+ theme(axis.text.x  = element_text(angle=90, vjust=0.5))
+P13MVPABoutMin
+```
+
+```{r, fig.cap="Figure TK. Minutes of MVPA (Bouts) per Valid Day: Participant 14"}
+P14MVPABoutMin <- ggplot(data=subset(FinalData.MixedModel.Strength, ID == 14), aes(Date, MVPABoutMin)) +
+  geom_point() +
+  geom_path() +
+  geom_hline(aes(yintercept=59.81), colour="#BB0000", linetype="dashed") +
+  labs(x = "Date", y = "Minutes of MVPA per Day") +
+ scale_x_date(labels = date_format("%m/%d/%Y")) +
+ theme(axis.text.x  = element_text(angle=90, vjust=0.5))
+P14MVPABoutMin
+```
+
+```{r, fig.cap="Figure TK. Minutes of MVPA (Bouts) per Valid Day: Participant 15"}
+P15MVPABoutMin <- ggplot(data=subset(FinalData.MixedModel.Strength, ID == 15), aes(Date, MVPABoutMin)) +
+  geom_point() +
+  geom_path() +
+  geom_hline(aes(yintercept=23.20), colour="#BB0000", linetype="dashed") +
+  labs(x = "Date", y = "Minutes of MVPA per Day") +
+ scale_x_date(labels = date_format("%m/%d/%Y")) +
+ theme(axis.text.x  = element_text(angle=90, vjust=0.5))
+P15MVPABoutMin
+```
+
+```{r, fig.cap="Figure TK. Minutes of MVPA (Bouts) per Valid Day: Participant 16"}
+P16MVPABoutMin <- ggplot(data=subset(FinalData.MixedModel.Strength, ID == 16), aes(Date, MVPABoutMin)) +
+  geom_point() +
+  geom_path() +
+  geom_hline(aes(yintercept=35.53), colour="#BB0000", linetype="dashed") +
+  labs(x = "Date", y = "Minutes of MVPA per Day") +
+ scale_x_date(labels = date_format("%m/%d/%Y")) +
+ theme(axis.text.x  = element_text(angle=90, vjust=0.5))
+P16MVPABoutMin
+```
+
+```{r, fig.cap="Figure TK. Minutes of MVPA (Bouts) per Valid Day: Participant 17"}
+P17MVPABoutMin <- ggplot(data=subset(FinalData.MixedModel.Strength, ID == 17), aes(Date, MVPABoutMin)) +
+  geom_point() +
+  geom_path() +
+  geom_hline(aes(yintercept=37.82), colour="#BB0000", linetype="dashed") +
+  labs(x = "Date", y = "Minutes of MVPA per Day") +
+ scale_x_date(labels = date_format("%m/%d/%Y")) +
+ theme(axis.text.x  = element_text(angle=90, vjust=0.5))
+P17MVPABoutMin
+```
+
+```{r, fig.cap="Figure TK. Minutes of MVPA (Bouts) per Valid Day: Participant 18"}
+P18MVPABoutMin <- ggplot(data=subset(FinalData.MixedModel.Strength, ID == 18), aes(Date, MVPABoutMin)) +
+  geom_point() +
+  geom_path() +
+  geom_hline(aes(yintercept=23.04), colour="#BB0000", linetype="dashed") +
+  labs(x = "Date", y = "Minutes of MVPA per Day") +
+ scale_x_date(labels = date_format("%m/%d/%Y")) +
+ theme(axis.text.x  = element_text(angle=90, vjust=0.5))
+P18MVPABoutMin
+```
+
+```{r, fig.cap="Figure TK. Minutes of MVPA (Bouts) per Valid Day: Participant 19"}
+P19MVPABoutMin <- ggplot(data=subset(FinalData.MixedModel.Strength, ID == 19), aes(Date, MVPABoutMin)) +
+  geom_point() +
+  geom_path() +
+  geom_hline(aes(yintercept=5.96), colour="#BB0000", linetype="dashed") +
+  labs(x = "Date", y = "Minutes of MVPA per Day") +
+ scale_x_date(labels = date_format("%m/%d/%Y")) +
+ theme(axis.text.x  = element_text(angle=90, vjust=0.5))
+P19MVPABoutMin
+```
+
+```{r, fig.cap="Figure TK. Minutes of MVPA (Bouts) per Valid Day: Participant 20"}
+P20MVPABoutMin <- ggplot(data=subset(FinalData.MixedModel.Strength, ID == 20), aes(Date, MVPABoutMin)) +
+  geom_point() +
+  geom_path() +
+  geom_hline(aes(yintercept=3.04), colour="#BB0000", linetype="dashed") +
+  labs(x = "Date", y = "Minutes of MVPA per Day") +
+ scale_x_date(labels = date_format("%m/%d/%Y")) +
+ theme(axis.text.x  = element_text(angle=90, vjust=0.5))
+P20MVPABoutMin
+```
+
+```{r, fig.cap="Figure TK. Minutes of MVPA (Bouts) per Valid Day: Participant 21"}
+P21MVPABoutMin <- ggplot(data=subset(FinalData.MixedModel.Strength, ID == 21), aes(Date, MVPABoutMin)) +
+  geom_point() +
+  geom_path() +
+  geom_hline(aes(yintercept=15.13), colour="#BB0000", linetype="dashed") +
+  labs(x = "Date", y = "Minutes of MVPA per Day") +
+ scale_x_date(labels = date_format("%m/%d/%Y")) +
+ theme(axis.text.x  = element_text(angle=90, vjust=0.5))
+P21MVPABoutMin
+```
+
+```{r, fig.cap="Figure TK. Minutes of MVPA (Bouts) per Valid Day: Participant 22"}
+P22MVPABoutMin <- ggplot(data=subset(FinalData.MixedModel.Strength, ID == 22), aes(Date, MVPABoutMin)) +
+  geom_point() +
+  geom_path() +
+  geom_hline(aes(yintercept=17.24), colour="#BB0000", linetype="dashed") +
+  labs(x = "Date", y = "Minutes of MVPA per Day") +
+ scale_x_date(labels = date_format("%m/%d/%Y")) +
+ theme(axis.text.x  = element_text(angle=90, vjust=0.5))
+P22MVPABoutMin
+```
+
+```{r, fig.cap="Figure TK. Minutes of MVPA (Bouts) per Valid Day: Participant 23"}
+P23MVPABoutMin <- ggplot(data=subset(FinalData.MixedModel.Strength, ID == 23), aes(Date, MVPABoutMin)) +
+  geom_point() +
+  geom_path() +
+  geom_hline(aes(yintercept=34.67), colour="#BB0000", linetype="dashed") +
+  labs(x = "Date", y = "Minutes of MVPA per Day") +
+ scale_x_date(labels = date_format("%m/%d/%Y")) +
+ theme(axis.text.x  = element_text(angle=90, vjust=0.5))
+P23MVPABoutMin
+```
+
+```{r, fig.cap="Figure TK. Minutes of MVPA (Bouts) per Valid Day: Participant 24"}
+P24MVPABoutMin <- ggplot(data=subset(FinalData.MixedModel.Strength, ID == 24), aes(Date, MVPABoutMin)) +
+  geom_point() +
+  geom_path() +
+  geom_hline(aes(yintercept=25.93), colour="#BB0000", linetype="dashed") +
+  labs(x = "Date", y = "Minutes of MVPA per Day") +
+ scale_x_date(labels = date_format("%m/%d/%Y")) +
+ theme(axis.text.x  = element_text(angle=90, vjust=0.5))
+P24MVPABoutMin
+```
+
+```{r, fig.cap="Figure TK. Minutes of MVPA (Bouts) per Valid Day: Participant 25"}
+P25MVPABoutMin <- ggplot(data=subset(FinalData.MixedModel.Strength, ID == 25), aes(Date, MVPABoutMin)) +
+  geom_point() +
+  geom_path() +
+  geom_hline(aes(yintercept=65.31), colour="#BB0000", linetype="dashed") +
+  labs(x = "Date", y = "Minutes of MVPA per Day") +
+ scale_x_date(labels = date_format("%m/%d/%Y")) +
+ theme(axis.text.x  = element_text(angle=90, vjust=0.5))
+P25MVPABoutMin
+```
+
+```{r, fig.cap="Figure TK. Minutes of MVPA (Bouts) per Valid Day: Participant 26"}
+P26MVPABoutMin <- ggplot(data=subset(FinalData.MixedModel.Strength, ID == 26), aes(Date, MVPABoutMin)) +
+  geom_point() +
+  geom_path() +
+  geom_hline(aes(yintercept=83.76), colour="#BB0000", linetype="dashed") +
+  labs(x = "Date", y = "Minutes of MVPA per Day") +
+ scale_x_date(labels = date_format("%m/%d/%Y")) +
+ theme(axis.text.x  = element_text(angle=90, vjust=0.5))
+P26MVPABoutMin
+```
+
+```{r, fig.cap="Figure TK. Minutes of MVPA (Bouts) per Valid Day: Participant 27"}
+P27MVPABoutMin <- ggplot(data=subset(FinalData.MixedModel.Strength, ID == 27), aes(Date, MVPABoutMin)) +
+  geom_point() +
+  geom_path() +
+  geom_hline(aes(yintercept=12.84), colour="#BB0000", linetype="dashed") +
+  labs(x = "Date", y = "Minutes of MVPA per Day") +
+ scale_x_date(labels = date_format("%m/%d/%Y")) +
+ theme(axis.text.x  = element_text(angle=90, vjust=0.5))
+P27MVPABoutMin
+```
+
+```{r, fig.cap="Figure TK. Minutes of MVPA (Bouts) per Valid Day: Participant 28"}
+P28MVPABoutMin <- ggplot(data=subset(FinalData.MixedModel.Strength, ID == 28), aes(Date, MVPABoutMin)) +
+  geom_point() +
+  geom_path() +
+  geom_hline(aes(yintercept=47.96), colour="#BB0000", linetype="dashed") +
+  labs(x = "Date", y = "Minutes of MVPA per Day") +
+ scale_x_date(labels = date_format("%m/%d/%Y")) +
+ theme(axis.text.x  = element_text(angle=90, vjust=0.5))
+P28MVPABoutMin
+```
+
+```{r, fig.cap="Figure TK. Minutes of MVPA (Bouts) per Valid Day: Participant 29"}
+P29MVPABoutMin <- ggplot(data=subset(FinalData.MixedModel.Strength, ID == 29), aes(Date, MVPABoutMin)) +
+  geom_point() +
+  geom_path() +
+  geom_hline(aes(yintercept=13.39), colour="#BB0000", linetype="dashed") +
+  labs(x = "Date", y = "Minutes of MVPA per Day") +
+ scale_x_date(labels = date_format("%m/%d/%Y")) +
+ theme(axis.text.x  = element_text(angle=90, vjust=0.5))
+P29MVPABoutMin
+```
+
+```{r, fig.cap="Figure TK. Minutes of MVPA (Bouts) per Valid Day: Participant 30"}
+P30MVPABoutMin <- ggplot(data=subset(FinalData.MixedModel.Strength, ID == 30), aes(Date, MVPABoutMin)) +
+  geom_point() +
+  geom_path() +
+  geom_hline(aes(yintercept=27.83), colour="#BB0000", linetype="dashed") +
+  labs(x = "Date", y = "Minutes of MVPA per Day") +
+ scale_x_date(labels = date_format("%m/%d/%Y")) +
+ theme(axis.text.x  = element_text(angle=90, vjust=0.5))
+P30MVPABoutMin
+```

@@ -13,19 +13,62 @@ A review of the Fitbit system (device(s), mobile apps, and website) identified a
 
 ## Qualitative Results
 
+### Participant Characteristics
+A number of characteristics related to participant behavior were developed during the coding process. These
+#### Data Affinity
+Through the interview and the coding process nine participants were determined to have a "high data affinity" due to their interactions with their activity data, their choice to connect their Fitbit account to additional services, and/or their previously mentioned association with a "Quantified Self" community. Most common among these activities that represented data affinity was downloading and visualizing activity data in alternative software programs. For example:
+
+> *"I was able to download all my data and I've got that all in an Excel spreadsheet from beginning to end. For me it's easier to look at things as a whole on that spreadsheet then it is the Fitbit website."* (P3)
+
+> *"I've done historically cool things. I have just it in Google sheets, I keep open a quick histogram of my step count to see where I'm at historically, so just a chart" (P2)
+
+> *"But of course. [laughs] I do, do that routinely [download data from Fitbit website]. I've had some issues with custom date range exports lately but yeah. It lets me slice and dice data. How did I do in any given time or a given six‑month period, look at trends over time. I do all that geeky stuff."* (P18)"
+
+
+
+
+
+
+
 ### Domain Use
 Participants in this study used at least one BCT within 14 of the 16 (87.5%) domains identified in the BCTTv1. No responses in the transcripts were attributed and coded as expressing the use of BCTs within the domains of *Scheduled Consequences* or *Covert Learning*. Alternatively, all thirty participants were found to engage with techniques within the domains of *Goals and Planning* and *Feedback and Monitoring*. Table TK displays the number of participants who described actions that were attributed to the BCTs within each of the 16 domains.
 
-Of the eight BCT domains found to be incorporated into the design of the Fitbit system, seven were among the most commonly used by participants. Techniques with the *Associations* domain was reported to be used by only six participants, compared to the 20 to 30 participants who reported using techniques within the other seven domains available in the Fitbit system design. Of the domains that include techniques not available in the design of the Fitbit system, the most common domain was *Shaping Knowledge* with 22 participants (73.3%) who used techniques within this domain. On average, the eight domains that are included in the design of the Fitbit were used by over three times as many participants as those not included in the design (approximately 26 vs. 7 participants, respectively).
+Of the eight BCT domains found to be incorporated into the design of the Fitbit system, seven were among the most commonly used by participants. Techniques within the *Associations* domain was reported to be used by only six participants, compared to the 20 to 30 participants who reported using techniques within the other seven domains available in the Fitbit system design. Of the domains that include techniques not available in the design of the Fitbit system, the most common domain was *Shaping Knowledge* with 22 participants (73.3%) who used techniques within this domain. On average, the eight domains that are included in the design of the Fitbit were used by over three times as many participants as those not included in the design (approximately 26 vs. 7 participants, respectively).
+
+Participants used techniques within 6 to 11 of the 16 domains identified in the BCTTv1, with a overall mean of 8.10 domains (*SD* = 1.52). Per participant domain use is visualized in figure TK.
+
+```{r, fig.cap="Sum of BCT Domains used per Participant"}
+BCTDomains2 <- read.csv("~/Dropbox/Dissertation.Data/Data/BCTDomainCount.csv")
+
+ggplot(BCTDomains2, aes(as.factor(id), BCTDomains)) +
+  geom_bar(stat="identity") +
+  scale_y_continuous(breaks=seq(0, 12, 2)) +
+  labs(x = "Participant ID", y = "Number of BCT Domains Used")
+```
 
 ### Technique Use
-At the technique level, 40 unique BCTs were identified as being used by participants. The most common techniques were *Goal-setting (behavior)*, *Feedback on Behavior*, and *Self-monitoring of Behavior*, with all thirty participants expressing the use of these techniques during the interview. The most infrequently reported BCTs were *Behavioral Experiments*, *Future Punishment*, *Identification of Self as Role Model*, and *Valued Self-identity*. Each of these techniques was used by only one participant in this study. Participants in the current study used between 8 and 20 unique techniques, with a mean of 14 techniques used per participant (SD = 3.08).
+At the technique level, 40 unique BCTs were identified as being used by participants. The most common techniques were *Goal-setting (behavior)*, *Feedback on Behavior*, and *Self-monitoring of Behavior*, with all thirty participants expressing the use of these techniques during the interview. Other highly used BCTs include *Social Comparison* (*n* = 28), *Review Behavioral Goal(s)* (*n* = 24), and *Action Planning* (*n* = 22). The most infrequently reported BCTs were *Behavioral Experiments*, *Future Punishment*, *Identification of Self as Role Model*, and *Valued Self-identity*. Each of these techniques was used by only one participant in this study. Participants in the current study used between 8 and 20 unique techniques, with a mean of 14 techniques used per participant (SD = 3.08).
 
- Participants used 20 techniques that are not available in the design of the Fitbit system. In some cases, these techniques serve as augmentations that rely on additional technologies or systems outside of Fitbit, but most are based on behaviors, knowledge, or thought processes that the participant developed as they used the Fitbit system. 
+ Participants used 26 techniques that are not currently included in the design of the Fitbit system. In some cases, these techniques serve as augmentations to the Fitbit experience that rely on additional technologies or systems outside of Fitbit. For example, the Fitbit system does not provide individuals with money, coupons, or other items of value for participating in behaviors or meeting goals. However, two participants mentioned connecting their Fitbit account to a rewards program at Walgreens, a U.S. based pharmacy and convenience store:
 
- Table TK contains examples taken from participant's interviews that were coded for each of the 40 identified techniques.
+ > "It is connected to Walgreens because they send me points after so many steps, and that I do use because, I think it's 10,000, every 10,000, you get a dollar or something. So I have redeemed those points for actual gift‑cards to Walgreens." (P22)
 
-### Domain Representation
-BCTs
+ One of the participants who mentioned connecting their Fitbit account to Walgreens also mentioned that she was able to receive insurance premium rebates by connecting and syncing their Fitbit data:
 
-Examples of BCTs
+ > "The [participant's employer] has, a similar thing where you earn points through synced data from Fitbit, Runkeeper, and related apps. That one actually gets a reduction off of our health insurance premium for next year. I met the goal for that one, too. That helps me to stay connected with Fitbit." (P15)
+
+In a similar vein, participants spoke about a variety of connected services that they connect to their Fitbit account in order to receive incentives:
+
+> “Like Fitbit it [Leap4Life] has challenges between users. You get points and at some point, before I die perhaps, the points will equate to a gift card and things, or financial rewards.” (P18)
+
+
+
+#### Fitbit Devices
+As previously reported, participants in this study used a variety of different Fitbit devices. These devices were determined through the device identification available through the Fitabase service. However, ten participants mentioned that their current Fitbit device was not their first. Some of these participants bought a new device because of new features:
+> *"They gave all of our employees a Zip at corporate, and then I went and bought the One because I wanted to track more. I didn't end up tracking more with it. I feel like it didn't help that well because of sleep and stuff like that. Now I'm using this one [Charge HR]."* (P14)
+
+Buying new devices because of loss, or receiving replacement because of malfunctioning devices was also a common theme among those who had experience with multiple devices:
+> *" I actually ruined it three times. I did it every summer for three years. The first of the summer I would jump in the pool with it still on, and I'd just call Fitbit, and they would replace it. After the third time I thought, 'I should probably just by one, and stop getting free ones,' but work gave  me [a Zip], so I didn't have to buy one."* (P22)
+
+One participant mentioned that they were use two devices concurrently because of the different features and ability to track additional data during periods of exercise:
+ > *"The only time I usually switch it is after the gym. I'll get up, and if I know I'm going to the gym, I'll just put on the Charge HR, and then I'll either just continue wearing it for the rest of the day, or I'll come home after the gym, shower, and I put the Zip on for the rest of the day. If I change it, I only change it once a day. I don't change it more than once a day." (P30)

@@ -1,0 +1,57 @@
+---
+title: "Results.Extra"
+author: "Ernesto Ramirez"
+date: "January 27, 2016"
+output:
+  word_document:
+csl: apa-no-ampersand.csl
+bibliography: library.bib
+
+---
+results.extra
+### Steps Classification
+Steps per valid day were classified according to commonly used criteria [@Tudor-Locke2008a]. Across all participants 15.19% (2,422) of valid days were classified as sedentary, 22.45% (3,578) were classified as low activity, 21.93% (3,496) were classified as somewhat active, 18.71% (2,983) were classified as active, and 21.72% (3,462) were classified as very active. The frequency of meeting each activity classification per participant is presented in figure [TK].
+
+```{r, fig.cap="Figure TK. Frequency of Activity Classifications per Participant"}
+library(ggplot2)
+library(scales)
+load("~/Dropbox/Dissertation.Data/FitbitData/ProcessedData/Daily.Valid.Days.rdata")
+StepCategories <- with(Daily.Valid.Days, table(id, StepCategory))
+StepCategories.Percent <- as.data.frame(prop.table(StepCategories, 1))
+
+ggplot(StepCategories.Percent, aes(id, Freq, fill=StepCategory)) +
+  geom_bar(stat="identity") +
+  scale_y_continuous(labels=percent) +
+  labs(x = "Participant ID", y = "Percent of Valid Days per Participant") +
+  theme_bw()
+
+```
+
+### Activity Intensity
+Activity intensity is classified into one of four categories by Fitbit: Sedentary, Lightly Active, Fairly Active (moderate), and Very Active (vigorous). For the purposes of this analysis, sedentary time is not included as it may include time spent asleep and may not be valid indication of inactivity during waking hours.
+
+For all valid days, participants in the current study totaled 2,750,509 minutes of light activity. The mean amount of light activity across all participants was 172.54 minutes per day (*SD* = 76.96). Per participant minutes of light activity ranged from 15 to 890 minutes per valid day. Descriptive data for light activity per valid day per participant is shown in Table [TK].
+
+```{r}
+library(knitr)
+load("~/Dropbox/Dissertation.Data/Data/LightActiveMinutesDescriptives.Valid.Table.rdata")
+kable(LightActiveMinutesDescriptives.Valid.Table, caption = "Table [TK]: Physical Activity Desrciptives: Light Activity", row.names = FALSE)
+
+```
+
+For all valid days, participants in the current study totaled 1,153,304 minutes of moderate activity. The mean amount of moderate activity across all participants was 72.35 minutes per day (*SD* = 46.37). Per participant minutes of moderate activity ranged from 0 to 436 minutes per valid day. Descriptive data for moderate activity per valid day per participant is shown in Table [TK].
+
+```{r}
+library(knitr)
+load("~/Dropbox/Dissertation.Data/Data/FairlyActiveMinutesDescriptives.Valid.Table.rdata")
+kable(FairlyActiveMinutesDescriptives.Valid.Table, caption = "Table [TK]: Physical Activity Desrciptives: Moderate Activity", row.names = FALSE)
+
+```
+For all valid days, participants in the current study totaled 540,104 minutes of vigorous activity. The mean amount of vigorous activity across all participants was 33.88 minutes per day (*SD* = 36.94). Per participant minutes of light activity ranged from 0 to 422 minutes per valid day. Descriptive data for vigorous activity per valid day per participant is shown in Table [TK].
+
+```{r}
+library(knitr)
+load("~/Dropbox/Dissertation.Data/Data/VeryActiveMinutesDescriptives.Valid.Table.rdata")
+kable(VeryActiveMinutesDescriptives.Valid.Table, caption = "Table [TK]: Physical Activity Desrciptives: Vigorous Activity", row.names = FALSE)
+
+```

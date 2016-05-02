@@ -5,49 +5,150 @@ date: "March 31, 2016"
 output: html_document
 ---
 
-(REMEMBER TO TALK ABOUT EDUCATION LEVEL IN METHODS OR HERE)
+## Mixed Models
 
-Time was rescaled to represent 30-day periods.
+#### Date Reduction & Variable Refinement
+It was determined that participants who possessed less that 50% valid days to total available days (Valid Days / Fitbit User Period) would not be included in the mixed model analysis as their data represents inconsistent wear behavior and may not be representative of actual physical activity behavior. Five participants were therefore excluded from the mixed model analysis. These participants' interviews were retained and included in the qualitative analysis.
 
-The first step in the mixed model analysis was to assess if fitting a random slope improves the unconditional linear growth model. This was accomplished by evaluating an ANOVA comparing the model fit of the unconditional linear growth models with and without the inclusion of random slopes. The inclusion of random slope for time significantly improved the model fit (X^2^(2) = 454.44, p < .001). A Q-Q plot of the residuals indicated that the data was heavy-tailed. Therefore the outcome variable, daily steps, was log transformed for all remaining analyses.
+Education was reduced to a two-level variable for ease of interpretation. Participants were grouped by wether or not they completed a graduate or professional degree. Additionally, the date variable was transformed to represent *time* and rescaled in order to maximize the likelihood of model convergence. The time variable was calculated as the number of days since the participant began using a Fitbit device, with the first day being represented as *time* = 0. Time was then rescaled to represent the approximate ratio of days per month by dividing the *time* variable by 30. A one-unit change in *time* therefore represents a 30-day increase.
 
-Next, demographic variables were entered into the model as fixed effects (including interaction terms) and backwards elimination of non-significant effects was performed in order to determine if any participant characterists were significantly related to the change in step counts over time. Age, Gender, BMI, Household Income, Education Level, Type of Fitbit, and Data Affinity classification were all entered into the initial model. The fixed effect and interaction term for Education Level was retained as a significant predictor of daily step counts. The inclusion of the fixed effect and interaction term for Education Level signficantly improved the model fit ((X^2^(4) = 9.26, p = .01).
-The final demographic model is as follows:
+### Modeling Steps per Day
+#### Random Slope Model Testing
+The first step in the mixed model analysis was to assess if fitting a random slope improves the unconditional linear growth model. This was accomplished by evaluating an ANOVA comparing the model fit of the unconditional linear growth models with and without the inclusion of random slopes. A Q-Q plot of the residuals indicated that the data was heavy-tailed. Therefore the outcome variable, daily steps, was log transformed for all remaining analyses. The inclusion of random slope for time significantly improved the model fit (X^2^(2) = 454.44, p < .001).
 
-logSteps ~ timescale + Education2 + (timescale | ID) + timescale:Education2
+The random slope model indicates that a) there is a small, but insignificant decrease in steps over time in this sample, b) participants differ in terms of their initial job satisfaction levels, and c) the linear individual growth pattern varies among participants. Model estimates (see Table TK) indicate that for this sample there is a 0.1% decrease in steps per day over a 30-day period.
 
-Next, the BCT Domains which were found to be included in the design of the Fitbit were entered into the model and backwards elimination of non-significant effects was performed. Additionally, only BCT Domains with observed variability were entered into the model. BCT Domain 1 and  Domain 2, which were observed to be used by all participants, were not included in the model. This resulted in the inclusion of BCT Domains 3, 6, 7, 8, 10, and 15. The fixed effect and interaction term for Education Level was also included per the previous model fit. After the backwwards elimination was completed only the fixed effect and interaction term for BCT6, Comparison of Behavior, was retained from the initial set of BCTs entered at this stage. The inclusion of the fixed effect and interaction term for Comparison of Behavior signficantly improved the model fit ((X^2^(4) = 9.10, p =.01) when compared to the final demographic model. The final initial BCT model is as follows:
+#### Demographic Model
+Next, demographic variables were entered into the model as fixed effects (including interaction terms) and backwards elimination of non-significant effects was performed in order to determine if any participant characteristics were significantly related to the change in step counts over time. Age, Gender, BMI, Household Income, Education Level, Type of Fitbit, and Data Affinity classification were all entered into the initial model. The fixed effect and interaction term for Education Level was retained as a significant predictor of daily step counts. The inclusion of the fixed effect and interaction term for Education Level significantly improved the model fit ((X^2^(4) = 9.26, p = .01).
 
-logSteps ~ timescale + BCT6 + Education + (timescale | ID) + timescale:BCT6 + timescale:Education
+Model estimates (see Table TK) indicate the growth pattern among participants continues to vary and that there is a small, but significant decrease in steps per day over time. Fixed effects estimates for the final demographic model also indicate that education level is negatively related to participants' initial physical activity level (steps per day), but does not reach significance.
 
-Lastly, the remaining BCT domains were entered into the model and backwards elimination of non-significant effects was performed. Both Education Level and BCT6 were retained (fixed effects and interaction term) per the previous model. After backwards elimination was completed, both BCT9, Comparison of Outcomes, and BCT12, Antecedents, were retained in the final model (fixed effects and interactions terms). The inclusion of these terms in the final model significantly improved model fit  ((X^2^(4) = 24.43, p < .001). The final BCT model is as follows:
+[Insert Random Slopes and Demographic Model Table here]
 
-logSteps ~ timescale + BCT6 + BCT9 + BCT12 + Education2 + (timescale | ID) + timescale:BCT6 + timescale:BCT9 + timescale:BCT12 + timescale:Education2
+#### Initial BCT Domain Model
+Next, the BCT Domains which were found to be included in the design of the Fitbit were entered into the model and backwards elimination of non-significant effects was performed. Additionally, only BCT Domains with observed variability were entered into the model. BCT Domain 1 (*Goals and Planning*) and Domain 2 (*Feedback and Monitoring*), which were observed to be used by all participants, were not included in the model. This resulted in the inclusion of BCT Domains 3, 6, 7, 8, 10, and 15. The fixed effect and interaction term for Education Level was also included per the previous model fit. After the backwards elimination was completed only the fixed effect and interaction term for BCT6, *Comparison of Behavior*, was retained from the initial set of BCTs entered at this stage. The inclusion of the fixed effect and interaction term for Comparison of Behavior significantly improved the model fit ((X^2^(2) = 9.10, p =.01) when compared to the Demographic Model.
 
-Model estimates are available in Table TK. The model estimates in the final BCT model indicate that the when controlling for significant BCTs and Education level there is a significant negative fixed effect of time on daily steps. This effect is observed as a -6.8% decrease in steps over a 30 day period (approximatesly one month) in this sample.
+Again, the model estimates (see Table TK) indicate that there is small, but significant negative effect of time on steps per day corresponding to a 6.8% decrease in steps per day over every 30-day period. The Time by BCT6 (*Comparisons of Behavior*) domain use interaction was also found to be significant.
 
-##BCT Strength Models
-Growth -> Demo = same
-Demo -> BCT1 = same
-BCT1 -> BCT2 = same
+#### Final BCT Domain Model
+Lastly, the remaining BCT domains were entered into the model and backwards elimination of non-significant effects was performed. Both Education Level and BCT6 were retained (fixed effects and interaction term) per the previous model. After backwards elimination was completed, both BCT9, *Comparison of Outcomes*, and BCT12, Antecedents, were retained in the final model (fixed effects and interactions terms). The inclusion of these terms in the final model significantly improved model fit  ((X^2^(4) = 24.43, p < .001) when compared to the Initial BCT Model.
+
+The model estimates in the Final BCT Domain Model (see Table TK) continued to indicate that the growth pattern among participants varies and that there is a small, but significant decrease in steps per day over time. A significant fixed effect for BCT12 (*Antecedents*) indicates that participants who used techniques within the in the *Antecedents* domain have higher initial values for steps per day when all other variables are set to zero. Interaction terms for each of the included BCT domains are significant. The plots of the predicted interaction effect for Time by BCT6 (*Comparison of Behavior*) and Time by BCT12 (*Antecedents*) show similar trends (see figures TK and TK, respectively). Interaction effects indicate that initial values for steps per day were higher for participants who used techniques in the *Antecedents* domain, and steps per day is predicated to decrease over time. Those who did use techniques in the *Antecedents* domain had slightly  Participants who reported using techniques in the *Comparison of Behavior* domain had lower initial steps per day and showed a predicted increase over time. Alternatively, the plot of the Time by BCT9 (*Comparison of Outcomes*) predicted interaction effect indicates an inverse relationship between steps per day and use of the domain (see figure TK). Lastly, the Time by Education Level interaction was found to be significant as well. Individuals who have a graduate or professional degree start at a lower initial value for steps per day, and have a small increase in steps per day over time (see figure TK).
+
+[insert Table for initial and final bct domain models here]
+
+```{r, echo=FALSE, fig.cap="Interaction Between BCT6 (Comparison of Behavior) Use and Steps per Day Slope"}
+library(lme4)
+library(effects)
+library(ggplot2)
+
+final.BCT.Domain.model2 <- lmer(logSteps ~ Time30 + BCT6 + BCT9 + BCT12 +
+                                  Education2 + (Time30 | ID) + Time30:BCT6 + Time30:BCT9 +
+                                  Time30:BCT12 + Time30:Education2, data = FinalData.MixedModel.Domain.Reduce)
+
+BCT.Domain.TimebyBCT6 <- effect("Time30:BCT6", final.BCT.Domain.model2)
+BCT.Domain.TimebyBCT6df <- as.data.frame(BCT.Domain.TimebyBCT6)
+
+ggplot(BCT.Domain.TimebyBCT6df , aes(Time30, fit, color=BCT6)) +
+  geom_line() +
+  geom_errorbar(aes(ymin=fit-se, ymax=fit+se), width=0.2) +
+  geom_point(shape=21, fill="white") +
+  labs(x = "30-Day Increments", y = "Log of Steps per Day") +
+  scale_color_discrete(name="BCT6\n(Comparison of Behavior)")
+
+```
+
+```{r, echo=FALSE, fig.cap="Interaction Between BCT12 (Antecedents) Use and Steps per Day Slope"}
+library(lme4)
+library(effects)
+library(ggplot2)
+
+final.BCT.Domain.model2 <- lmer(logSteps ~ Time30 + BCT6 + BCT9 + BCT12 +
+                                  Education2 + (Time30 | ID) + Time30:BCT6 + Time30:BCT9 +
+                                  Time30:BCT12 + Time30:Education2, data = FinalData.MixedModel.Domain.Reduce)
+
+BCT.Domain.TimebyBCT12 <- effect("Time30:BCT12", final.BCT.Domain.model2)
+BCT.Domain.TimebyBCT12df <- as.data.frame(BCT.Domain.TimebyBCT12)
+
+ggplot(BCT.Domain.TimebyBCT12df, aes(Time30, fit ,color=BCT12)) +
+    geom_line() +
+    geom_errorbar(aes(ymin=fit-se, ymax=fit+se), width=0.2) +
+    geom_point(shape=21, fill="white") +
+    labs(x = "30-Day Increments", y = "Log of Steps per Day") +
+    scale_color_discrete(name="BCT12\n(Antecedents)")
+```
+```{r, echo=FALSE, fig.cap="Interaction Between BCT9 (Comparison of Outcomes) Use and Steps per Day Slope"}
+library(lme4)
+library(effects)
+library(ggplot2)
+
+final.BCT.Domain.model2 <- lmer(logSteps ~ Time30 + BCT6 + BCT9 + BCT12 +
+                                  Education2 + (Time30 | ID) + Time30:BCT6 + Time30:BCT9 +
+                                  Time30:BCT12 + Time30:Education2, data = FinalData.MixedModel.Domain.Reduce)
+BCT.Domain.TimebyBCT9 <- effect("Time30:BCT9", final.BCT.Domain.model2)
+BCT.Domain.TimebyBCT9df <- as.data.frame(BCT.Domain.TimebyBCT9)
+ggplot(BCT.Domain.TimebyBCT9df , aes(Time30, fit, color=BCT9)) +
+    geom_line() +
+    geom_errorbar(aes(ymin=fit-se, ymax=fit+se), width=0.2) +
+    geom_point(shape=21, fill="white") +
+    labs(x = "30-Day Increments", y = "Log of Steps per Day") +
+    scale_color_discrete(name="BCT9\n(Comparison of Outcomes)")
+```
+
+```{r, echo=FALSE, fig.cap="Interaction Between BCT9 (Comparison of Outcomes) Use and Steps per Day Slope"}
+library(lme4)
+library(effects)
+library(ggplot2)
+
+final.BCT.Domain.model2 <- lmer(logSteps ~ Time30 + BCT6 + BCT9 + BCT12 +
+                                  Education2 + (Time30 | ID) + Time30:BCT6 + Time30:BCT9 +
+                                  Time30:BCT12 + Time30:Education2, data = FinalData.MixedModel.Domain.Reduce)
+
+BCT.Domain.TimebyEducation <- effect("Time30:Education2", final.BCT.Domain.model2)
+BCT.Domain.TimebyEducationdf <- as.data.frame(BCT.Domain.TimebyEducation)
+
+ggplot(BCT.Domain.TimebyEducationdf , aes(Time30, fit, color=Education2)) +
+    geom_line() +
+    geom_errorbar(aes(ymin=fit-se, ymax=fit+se), width=0.2) +
+    geom_point(shape=21, fill="white") +
+    scale_color_discrete(name="Education Level",
+                             breaks=c("Completed Graduate or Professional Degree", " ","Some or Completed College"),
+                             labels=c("Completed Graduate\nor Professional Degree"," ", "Some Highschool\nto Completed College")) +
+    labs(x = "30-Day Increments", y = "Log of Steps per Day")
+```
+
+### Initial BCT Strength Model
+The initial BCT Strength Model introduced the variables calculated to reflect the strength of BCT domain use - the number of techniques used per domain. In the initial BCT Strength Model, domains which were found to be included in the design of the Fitbit were entered into the model already containing random slopes and significant demographic variables, and backwards elimination of non-significant effects was performed. Similar to the BCT Domain Model, the only domain retained in the initial BCT Strength Model was BCT6 (*Comparison of Behavior*). The inclusion of the fixed effect and interaction term for *Comparison of Behavior* significantly improved the model fit ((X^2^(2) = 9.10, p =.01) when compared to the Demographic Model.
+
+Model estimates (see Table TK) indicate that there is small, but significant negative effect of time on steps per day. The Time by BCT6 (*Comparisons of Behavior*) interaction was also found to be significant. The significant Time by Education Level interaction was retained in this model.
+
+### Final BCT Strength Model
+The remaining BCT variables were entered into the model and backwards elimination of non-significant effects was performed. Both Education Level and BCT6 were retained (fixed effects and interaction term) per the previous model. As was observed in the Final BCT Domain Model, both BCT9, *Comparison of Outcomes*, and BCT12, *Antecedents*, were retained in the Final BCT Strength Model (fixed effects and interactions terms). The inclusion of these terms in the final model significantly improved model fit  ((X^2^(4) = 24.43, p < .001) when compared to the Initial BCT Model.
+
+The model estimates the Final BCT Strength Model mimic those of the Final BCT Domain Model. The three retained variables reflecting BCT use were effectively entered as dichotomous variables as participants only used one technique from each of these domains.
+
+[insert bct strength model table here]
+
+### Modeling Minutes of MVPA per Day
+The first step in the mixed model analysis was to assess if fitting a random slope improves the unconditional linear growth model. This was accomplished by evaluating an ANOVA comparing the model fit of the unconditional linear growth models with and without the inclusion of random slopes. A Q-Q plot of the residuals indicated that the data was heavy-tailed. Therefore the outcome variable, daily steps, was log transformed for all remaining analyses. The inclusion of random slope for time significantly improved the model fit (X^2^(2) = 454.44, p < .001).
+
+The random slope model indicates that a) there is a small, but insignificant decrease in steps over time in this sample, b) participants differ in terms of their initial job satisfaction levels, and c) the linear individual growth pattern varies among participants. Model estimates (see Table TK) indicate that for this sample there is a 0.1% decrease in steps per day over a 30-day period.
+
+### Initial BCT Domain Model
+A second set of mixed models were examined in order to determine the relationship between demographic variables and BCTs on daily minutes of MVPA. As was previously completed for daily steps, the first set of models examined the effect of BCT use at the domain level.
+
+First, all demographic variables were entered into the model and backwards elimination was performed. No demographic variables were found to be significant. Thus, the final demographic model is equal to the unconditional growth model that includes the random effect of time. Next, the first set of BCTs (those included in the design of the Fitbit system), were entered into the model. After the backwards elimination was completed only the fixed effect and interaction term for BCT6, Comparison of Behavior, was retained from the initial set of BCTs entered at this stage. The inclusion of the fixed effect and interaction term for Comparison of Behavior significantly improved the model fit ((X^2^(4) = 6.95, p < 0.05) when compared to the final demographic model. The final initial BCT model is as follows:
 
 
-
-##MVPA Models
-
-### BCT Domain
-A second set of mixed models were examined in order to determine the relationship between demographic variables and BCTs on daily minutes MVPA. As was previously completed for daily steps, the first set of models examined the effect of BCT use at the domain level.
-
-First, all demographic variables were entered into the model and backwards elimination was performed. No demographic variables were found to be significant. Thus, the final demographic model is equal to the unconditional growth model that includes the random effect of time. Next, the first set of BCTs (those included in the design of the Fitbit system), were entered into the model. After the backwwards elimination was completed only the fixed effect and interaction term for BCT6, Comparison of Behavior, was retained from the initial set of BCTs entered at this stage. The inclusion of the fixed effect and interaction term for Comparison of Behavior signficantly improved the model fit ((X^2^(4) = 6.95, p < 0.05) when compared to the final demographic model. The final initial BCT model is as follows:
-
-MVPABoutMin ~ Time30 + BCT6 + (Time30 | ID) + Time30:BCT6
 
 Lastly, the remaining BCTs were entered into the model. BCT6 (fixed effect and interaction term) was retained per the previous model. After backwards elimination was completed, both BCT9, Comparison of Outcomes, and BCT12, Antecedents, were retained in the final model. Only the interaction term for BCT9 was retained. The inclusion of these additional terms in the model significantly improved model fit ((X^2^(3) = 15.00, p = 0.002).
 
-### BCT Strength
+#### Initial BCT Strength Model
 
-A second set of models were produced in order to examine the relationship between the number of BCTS used per domain and daily minutes of MVPA. First, all demographic variables were entered into the model and backwards elimination was performed. No demographic variables were found to be significant. Thus, the final demographic model is equal to the unconditional growth model that includes the random effect of time. Next, the first set of BCTs (those included in the design of the Fitbit system), were entered into the model. After the backwwards elimination was completed only the fixed effect and interaction term for BCT1, Goal Setting and Planning, and BCT6, Comparison of Behavior, were retained from the initial set of BCTs entered at this stage. The inclusion of the fixed effect and interaction term for these BCTs signficantly improved the model fit ((X^2^(4) = 14.91, p < 0.01) when compared to the final demographic model.
+A second set of models were produced in order to examine the relationship between the number of BCTS used per domain and daily minutes of MVPA. First, all demographic variables were entered into the model and backwards elimination was performed. No demographic variables were found to be significant. Thus, the final demographic model is equal to the unconditional growth model that includes the random effect of time. Next, the first set of BCTs (those included in the design of the Fitbit system), were entered into the model. After the backwards elimination was completed only the fixed effect and interaction term for BCT1, Goal Setting and Planning, and BCT6, Comparison of Behavior, were retained from the initial set of BCTs entered at this stage. The inclusion of the fixed effect and interaction term for these BCTs signficantly improved the model fit ((X^2^(4) = 14.91, p < 0.01) when compared to the final demographic model.
 
+
+#### Final BCT Strength Model
 Lastly, the remaining BCTs were entered into the model. BCT1 and BCT6 (fixed effects and interaction terms) were retained per the previous model fit. After backwards elimination was completed, both BCT9, Comparison of Outcomes, and BCT12, Antecedents, were retained in the final model. Only the interaction term for BCT9 was retained. The inclusion of these additional terms in the model significantly improved model fit ((X^2^(3) = 17.59, p < 0.001).
 
 

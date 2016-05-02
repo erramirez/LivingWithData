@@ -3,27 +3,17 @@ title: "Results.One"
 author: "Ernesto Ramirez"
 date: "January 27, 2016"
 output:
-  github_document:
-    toc: true
-    toc_depth: 3
-    html_preview: false
-  pdf_document:
-    toc: yes
-  html_document:
-    toc: true
-    toc_float: true
   word_document:
+       reference_docx: Background_v1.docx
+       fig_caption: true
 csl: apa-no-ampersand.csl
 bibliography: library.bib
 ---
-
 # Results
-
 ### Participants.
 Participants were recruited between June and August 2015. Thirty-seven individuals responded to recruitment postings and expressed an interest in participating in the study. Of the 37 individuals who expressed interest, 33 completed the screening process for inclusion in the study. All 33 met the inclusion criteria and were asked to schedule the interview and connect their Fitbit data to Fitabase. Thirty-two individuals scheduled interviews and connected their Fitbit data to Fitabase, however two participants were not able to complete the interview due to time constraints. The Fitabase data connection was deleted for the two participants who were not able to complete the interview.  In total, 30 participants fully participated in the current study.
 
-Table [TK] shows the demographic information for the sample that completed the study. The sample consisted of 11 (37%) men and 19 women (63%).  Participants were between 23 and 60 years old, with a mean age of 36.60 years. The majority of participants reported that they were of Caucasian race/ethnicity (73%), were college educated (80% completed college or graduate degree), and worked full time (83%). Half the sample reported being married with another 40% reporting as “Single and Never Married.” Additionally, 33% of the sample reported a household income in excess of $100,000. Median income was $80,000 - $89,000 (one participant abstained from reporting household income information). Height and weight was self-reported and BMI was calculated. Participants had a BMI range of 17.28 to 59.67 kg/m2, with a mean of 25.85 kg/m2. Two participants were classified as “underweight” (6.67%, BMI < 25kg/m<sup>2</sup>), 24 participants (80%) were classified as “normal weight” (BMI = 25-30kg/m<sup>2</sup>), two participants were classified as "Obese Level I" (BMI = 30-35kg/m<sup>2</sup>), and two participants were classified as “Obese Level III" (BMI > 40kg/m<sup>2</sup>).
-
+Table [TK] displays the demographic information for the sample that completed the study. The sample consisted of 11 (37%) men and 19 women (63%). Participants were between 23 and 60 years old, with a mean age of 36.60 years (SD = 10.56). The majority of participants reported that they were of Caucasian race/ethnicity (73%), were college educated (80% completed college or graduate degree), and worked full time (83%). Half the sample reported being married with another 40% reporting as “Single and Never Married.” Additionally, 33% of the sample reported a household income in excess of $100,000. Median income was $80,000 - $89,000 (one participant abstained from reporting household income information). Height and weight was self-reported and BMI was calculated. Participants had a BMI range of 17.28 to 59.67 kg/m2, with a mean of 25.85 kg/m<sup>2</sup> (SD = 8.47). Two participants were classified as “underweight” (6.67%, BMI < 25kg/m<sup>2</sup>), 24 participants (80%) were classified as “normal weight” (BMI = 25-30kg/m<sup>2</sup>), two participants were classified as "Obese Level I" (BMI = 30-35kg/m<sup>2</sup>), and two participants were classified as “Obese Level III" (BMI > 40kg/m<sup>2</sup>). Four participants reported membership in "Quantified Self" communities.
 
 ### Fitbit Devices
 As previously mentioned, at the time of this study there were six different Fitbit devices available for purchase. Each of the six available devices were represented in the data set, with an additional device that is no longer available for purchase also represented (Ultra). In total, six participants were using the ChargeHR, six participants were using the Zip, five participants were using the Flex, five were using the One, two participants were using the Surge, and one participant was using the Ultra.
@@ -34,130 +24,52 @@ load("~/Dropbox/Dissertation.Data/Data/demographics.table.rdata")
 kable(demographics.table, caption = "Table [TK]: Participants' Demographics and Characteristics")
 ```
 
-### Usage, Wear Time, and Consistency
-_Usage_. There was a wide range for the length of time participants had been using a Fitbit device. To simplify understanding the the term, "Fitbit user period" is used to describe the total length of time a participant has been in identified as a user with the Fitbit ecosystem, from their initial sign-up with Fitbit until the date of their interview. It is possible that the Fitbit user period does not accurately reflect the total time a participant was using a Fitbit device. As stated previously, there may be days when individuals lose their devices, forget to put them on, or choose not to wear the device. These days are included when the historical data is accessed. This complete historical file was used in order to calculate the Fitbit user period. Participants in this study ranged from relatively new to using a Fitbit device to long-term users, with a range of 98 to 2,014 days (mean = 688.00, SD = 487.54).
+### Fitbit Use, Wear Time, and Consistency
+Participants in this study ranged from relatively new to using a Fitbit to long-term users, with a range of 98 to 2,014 days (*M* = 688.00, *SD* = 487.54). Initial review of all Fitbit data from the 30 participants in this study resulted in a total of 20,605 participant-days of available data. After completing the weartime processing steps described in the methods section a total of 15,941 valid participant-days of data were observed in the dataset. The ratio of valid days to total available days per participant ranged from 10.22% to 99.27%. The number of days of data at each step in the previously described analysis is presented in Table [TK]. A visual representation of all valid wear days is also presented in figure [TK].
 
-_Wear Time_.
-The initial review of all historical Fitbit data from the 30 participants included in this study resulted in a total of 20,637 participant-days of available Fitbit data.
-
-The first pass for non-wear time removed all days with zero steps, this reduced the full data set to 17,232 person days.
-
-Processing the minute-level MET data for each participant for algorithmically determined non-wear time resulted in further reduction to 15,954 days.
-
-A total of 757 minutes (0.003%) across all participants were classified as abnormal (> 200 steps/min). A total of 13 days were classified as invalid due to potentially abnormal data. Abnormal data represented between 12% and 82% of the total step count for the censured days. These 13 days were removed from further analysis resulting in 15,941 valid participants days.
-
-After the processing steps described above a total of 15,941 valid participant-days of data were used for analysis. The ratio of valid days to total available days per participant ranged from 10.22% to 99.27%. The number of days of data at each step in the previously described analysis is presented in Table [TK]. A visual representation of all valid wear days is presented in figure [TK].
-
-
-```{r}
+```{r, echo=FALSE, results = 'asis'}
 library(knitr)
-load("~/Dropbox/Dissertation.Data/Data/wear.days.table.rdata")
-kable(wear.days.table, caption = "Table [TK]: Valid Wear Time per Participant")
+library(plyr)
+load("~/Dropbox/Dissertation.Data/FitbitData/ProcessedData/Weartime.rdata")
+WearTable <- ddply(Daily.Activity.Final, c("id"), summarise,
+                   'Initial Available Days'=length(id),
+                   'Valid Days (MET Processing)'=sum(ValidDay.Counts),
+                   'Valid Days (Censured)'=sum(ValidDay.Censured),
+                   'Valid Days (Final)'=sum(Valid.Final)
+)
+WearTable$'Percent of Initial Available Days Included in Analysis' <- WearTable$`Valid Days (Final)` / WearTable$`Initial Available Days`
+kable(WearTable, caption = "Table [TK]")
 ```
 
-```{r, fig.cap = "Valid Days per Participant"}
-library(ggplot2)
-load("~/Dropbox/Dissertation.Data/FitbitData/ProcessedData/Daily.Activity.Final.rdata")
-ggplot(Daily.Activity.Final, aes(x=Date, y=Valid.Final)) +
+```{r, echo=FALSE, fig.cap="Figure TK. Visualization of Valid Fitbit Wear per Participant"}
+ggplot(Weartime, aes(x=Date, y=Valid.Final)) +
   geom_bar(stat="identity") +
-  scale_y_continuous(breaks=NULL, labels = NULL) +
+  scale_y_continuous(breaks=NULL, labels = NULL, name = "") +
   facet_grid(id ~.)
 ```
-
-
-_Consistency_
-Consistency of wearing and using the Fitbit device was measured by the coefficient of variation (CV) calculated on the binary Valid Day variable. The CV ranged from 8.55% to 246.33%.
-
-_Streaks_
-Consecutive valid wear days were examined and calculated using the RLE2 (run length encoding) function included in the R "accelerometry" package [@accelerometry]. Values for the minimum, maximum, meand, and stand deviation of consecutieve day streaks for wear and non-wear time are included in Table [TK]. The longest consecutive streak of valid wear time was 714 days. The longest consecutive streak of non-wear time was 597 days. Overall, participants had wore their fitbit and recorded a valid day for 20.70 consecutive days on average (SD = 48.17 days).
+On average participants wore their Fitbit and recorded a valid day for 20.70 consecutive days (*SD* = 48.17). Values for the minimum, maximum, mean, and standard deviation of consecutive day streaks for valid and non-wear days are included in Table [TK]. The longest consecutive streak of valid wear time lasted nearly two years (714 days, Participant 17). The longest consecutive streak of non-wear time was 597 days (Participant 18).
 
 ```{r}
-library(knitr)
+library(knitr, echo=FALSE)
 load("~/Dropbox/Dissertation.Data/Data/StreakTable.rdata")
 kable(StreakTable, caption = "Table [TK]: Consecutive Non-Wear and Valid Wear Days per Participant")
 ```
+## Physical Activity Outcome Variables
 
+### Steps
+For all valid days, participants in the current study totaled 154,546,189 steps. The mean across all participants was 9,694.87 steps per day (*SD* = 5,309.45). Steps per valid day ranged from a 109 to 68,565 steps. Descriptive data on steps per valid day for each participant is shown in Table [TK]. Participant step counts on valid days are visualized in figures TK - TK.
 
-### Physical Activity Variables
-
-_Steps_. For all valid days, participants in the currenty study totaled 154,546,189 steps. The mean across all participants was 9,694.87 steps per day (SD = 5,309.45). Per participant steps per valid day ranged from a 109 to 68,565 steps. Descriptive data on steps per valid day for each participant is shown in Table [TK].
-
-```{r}
+```{r, echo=FALSE}
 library(knitr)
 load("~/Dropbox/Dissertation.Data/Data/StepDescriptives.Valid.Table.rdata")
-kable(StepDescriptives.Valid.Table, caption = "Table [TK]: Physical Activity Desrciptives: Steps", row.names = FALSE)
-
-library(ggplot2)
-ggplot(StepDescriptives.Valid.Table, aes(x=id, y=mean)) + geom_bar(stat="identity")
+kable(StepDescriptives.Valid.Table, caption = "Table [TK]: Physical Activity Descriptives: Steps", row.names = FALSE)
 ```
 
-_Distance_.
-For all valid days, participants in the currenty study totaled 111,676.76 km traveled. The mean across all participants was
-7.01 km per day (SD = 3.91 km per day). Per participant kilometers traveled per day ranged from 0.07 to 56.30 km per day. Descriptive data for distance traveled per valid day per participant is shown in Table [TK].
+### MVPA Bout Minutes
+For all valid days, participants in the current study totaled 529,078 minutes of MVPA that were performed in bouts of at least 10 minutes. The mean amount of MVPA Bout Minutes was 33.19 minutes
+per day (*SD* = 42.70). Per participant minutes of MVPA, when classified in bouts, ranged from 0 to 474 minutes per day. Half of all participants did not obtain a mean of at least 30 minutes of MVPA per day for observed valid days.
 
-```{r}
+```{r, echo=FALSE}
 library(knitr)
-load("~/Dropbox/Dissertation.Data/Data/DistanceDescriptives.Valid.Table.rdata")
-kable(DistanceDescriptives.Valid.Table, caption = "Table [TK]: Physical Activity Desrciptives: Distance", row.names = FALSE)
-```
-
-_Activity Intensity Classification_.
-Activity intensity is classified into one of four categories by Fitbit: Sedentary, Lightly Active, Fairly Active (moderate), and Very Active (virogous). For the purposes of this analysis, sedentary time is not included as it may include time spent asleep and not a valid indication of inactivity during waking hours.
-
-For all valid days, participants in the currenty study totaled 2,750,509 minutes of light activity. The mean amount of light activity across all participants was 172.54 minutes per day (SD = 76.96 minutes per day). Per participant minutes of light activity ranged from 15 to 890 minutes per valid day. Descriptive data for light activity per valid day per participant is shown in Table [TK].
-
-```{r}
-library(knitr)
-load("~/Dropbox/Dissertation.Data/Data/LightActiveMinutesDescriptives.Valid.Table.rdata")
-kable(LightActiveMinutesDescriptives.Valid.Table, caption = "Table [TK]: Physical Activity Desrciptives: Light Activity", row.names = FALSE)
-
-```
-
-For all valid days, participants in the currenty study totaled 1,153,304 minutes of moderate activity. The mean amount of moderate activity across all participants was 72.35 minutes per day (SD = 46.37 minutes per day). Per participant minutes of moderate activity ranged from 0 to 436 minutes per valid day. Descriptive data for moderate activity  per valid day per participant is shown in Table [TK].
-
-```{r}
-library(knitr)
-load("~/Dropbox/Dissertation.Data/Data/FairlyActiveMinutesDescriptives.Valid.Table.rdata")
-kable(FairlyActiveMinutesDescriptives.Valid.Table, caption = "Table [TK]: Physical Activity Desrciptives: Moderate Activity", row.names = FALSE)
-
-```
-
-For all valid days, participants in the currenty study totaled 540,104 minutes of vigorous activity. The mean amount of vigorous activity across all participants was 33.88 minutes per day (SD = 36.94 minutes per day). Per participant minutes of light activity ranged from 0 to 422 minutes per valid day. Descriptive data for vigorous activity per valid day per participant is shown in Table [TK].
-
-```{r}
-library(knitr)
-load("~/Dropbox/Dissertation.Data/Data/VeryActiveMinutesDescriptives.Valid.Table.rdata")
-kable(VeryActiveMinutesDescriptives.Valid.Table, caption = "Table [TK]: Physical Activity Desrciptives: Vigorous Activity", row.names = FALSE)
-
-```
-
-
-Energy Expenditure - Calories
-<!-- probably want to create ee measure here --->
-
-
-### Guidelines Classification
-Minutes classified as moderate and vigorous activity intensity were totaled per day for each participant in order to examine how often participants met physical activity guidelines. Across the total sample, participants had fewer than 30 minutes of MVPA on 10.78% of valid days, obtained 30 to 59 minutes of MVPA on 12.90% of valid days, and had 60 minutes or more on 76.32% of valid days. Mean minutes of MVPA per day was 106.23 (SD = 67.01) with a range of 0 to 611 minutes. Per participant valid days for each of the guidelines categories (0-29min = did not meet guidelines, 30-59min  = met guidelines, 60+ min = exceeded guidelines) are available in Table [TK].
-
-
-_Note: 0 = did not meet 30min MVPA per day, 1 = 30-59 min MVPA per day, 2= 60+ min MVPA per day_
-```{r}
-library(knitr)
-load("~/Dropbox/Dissertation.Data/Data/MVPA.Guidelines.Table.Final.rdata")
-kable(MVPA.Guidelines.Table.Final , caption = "Table [TK]: Physical Activity Guidelines", row.names = FALSE)
-```
-
-### Step Classification
-Steps per valid day were classified according to commonly used criteria [@Tudor-Locke2008a]. Across all participants 15.19% (2,422) of valid days were classified as sedentary, 22.45% (3,578) were classified as low activity, 21.93% (3,496) were classified as somewhat active, 18.71% (2,983) were classified as active, and 21.72% (3,462) were classified as very active. Per Participant daily step classification are visualized in figure [TK].
-
-```{r, fig.cap="Classification of Valid Days by Step Total per Participant"}
-library(ggplot2)
-load("~/Dropbox/Dissertation.Data/FitbitData/ProcessedData/Daily.Valid.Days.rdata")
-StepCategories <- with(Daily.Valid.Days, table(id, StepCategory))
-StepCategories.Percent <- as.data.frame(prop.table(StepCategories, 1))
-
-ggplot(StepCategories.Percent, aes(id, Freq, fill=StepCategory)) + geom_bar(stat="identity")
-
-```
-
-### Trend
+load("~/Dropbox/Dissertation.Data/Data/MVPABoutsDescriptives.Valid.Table.rdata")
+kable(MVPABoutsDescriptives.Valid.Table.rdata, caption = "Table [TK]: MVPA Bout Minutes Summary Statistics per Participant", row.names = FALSE)

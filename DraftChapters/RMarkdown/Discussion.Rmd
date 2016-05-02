@@ -16,3 +16,15 @@ Why do pedometers increase physical activity? The following are adapted from Tud
 4.	The ability to check one’s progress in real-time is useful for setting goals, and checking and evaluating progress.
 5.	Recoding, storing, interacting with, and visualizing pedometer data provides additional mechanisms for personalized feedback, and a deeper understanding of behavior patterns.
 6.	The ability to transfer data and share it with others introduces social constructs such as accountability, support, comparison, and competition.
+
+
+
+Fitbit Use
+Participants in the current study wore their Fitbit device(s) fairly consistently, recording an average of nearly 21 consecutive valid wear days. 
+
+## Limitations
+### Participant Characteristics
+
+
+### Weartime Classification
+This study employed a rigorous weartime classification process designed to mimic the processes applied to studies using research grade accelerometers. To the author's knowledge, this is the first instance of applying a weartime classification algorithm to Fitbit data. Previous research involving interventions that included Fitbit devices described much simpler methods for classifying a day as valid or invalid. For example, Cadmus-Berram and colleagues [-@Cadmus-Bertram2015] classified any day with at least 2,000 steps as being a valid day. The current study, using minute-level activity data to determine valid weartime, may have inappropriately classified valid days as invalid due technical limitations inherent in the design of the Fitbit device software. A Fitbit device contains onboard memory to store activity data at a per-minute resolution. However it is designed to only store minute-level data for a maximum of seven days. If an individual does not sync their device at least once every seven days then the minute-level data is deleted and only daily-level information is retained and reported to Fitbit during the next sync [@FitbitSync]. An exploration of the final Fitbit dataset used in the analysis uncovered 258 days (1.25% of all observed days) where participants recorded step counts, but no minute-level information was available and thus each of those days were marked invalid.
